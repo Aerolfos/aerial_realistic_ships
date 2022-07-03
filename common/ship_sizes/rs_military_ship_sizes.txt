@@ -1,0 +1,404 @@
+############
+# STANDARD #
+############
+
+rs_support_cruiser = {
+	formation_priority = @support_cruiser_formation_priority
+	max_speed = @support_cruiser_max_speed
+	acceleration = @support_cruiser_acceleration
+	rotation_speed = @support_cruiser_rotation_speed
+	collision_radius = @support_cruiser_collision_radius
+
+	modifier = { 
+		ship_evasion_add = @support_cruiser_evasion
+		ship_piracy_suppression_add = @support_cruiser_piracy_suppression
+ 	}
+
+	max_hitpoints = @support_cruiser_hp
+	size_multiplier = @support_cruiser_naval_cap
+	fleet_slot_size = @support_cruiser_fleet_slot
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 5
+	is_space_station = no
+	icon = ship_size_rs_support_cruiser
+	base_buildtime = @support_cruiser_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	
+	prerequisites = { "tech_rs_auxiliary_cruisers" }
+	
+	default_behavior = line
+	combat_disengage_chance = @support_cruiser_disengage_chance
+	
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @support_cruiser_upkeep_energy
+			alloys = @support_cruiser_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 5
+	}
+
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 5
+				uses_standard_ship_sizes = yes
+			}
+		}
+	}
+}
+
+rs_ea_cruiser = {
+	formation_priority = @ea_cruiser_formation_priority
+	max_speed = @ea_cruiser_max_speed
+	acceleration = @ea_cruiser_acceleration
+	rotation_speed = @ea_cruiser_rotation_speed
+	collision_radius = @ea_cruiser_collision_radius
+
+	modifier = { 
+		ship_evasion_add = @ea_cruiser_evasion
+		ship_piracy_suppression_add = @ea_cruiser_piracy_suppression
+ 	}
+
+	max_hitpoints = @ea_cruiser_hp
+	size_multiplier = @ea_cruiser_naval_cap
+	fleet_slot_size = @ea_cruiser_fleet_slot
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 5
+	is_space_station = no
+	icon = ship_size_rs_ea_cruiser
+	base_buildtime = @ea_cruiser_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	
+	prerequisites = { "tech_rs_auxiliary_cruisers" }
+	
+	default_behavior = line
+	combat_disengage_chance = @ea_cruiser_disengage_chance
+	
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @ea_cruiser_upkeep_energy
+			alloys = @ea_cruiser_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 5
+	}
+
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 5
+				uses_standard_ship_sizes = yes
+			}
+		}
+	}
+}
+
+rs_battlecruiser = {
+	formation_priority = @battlecruiser_formation_priority
+	max_speed = @battlecruiser_max_speed
+	acceleration = @battlecruiser_acceleration
+	rotation_speed = @battlecruiser_rotation_speed
+	collision_radius = @battlecruiser_collision_radius
+
+	modifier = { 
+		ship_evasion_add = @battlecruiser_evasion
+		ship_piracy_suppression_add = @battlecruiser_piracy_suppression
+	}
+
+	max_hitpoints = @battlecruiser_hp
+	size_multiplier = @battlecruiser_naval_cap
+	fleet_slot_size = @battlecruiser_fleet_slot
+	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_rs_battlecruiser
+	base_buildtime = @battlecruiser_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	
+	prerequisites = { "tech_rs_battlecruisers" }
+
+	default_behavior = artillery
+	combat_disengage_chance = @battlecruiser_disengage_chance
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "aux_power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @battlecruiser_upkeep_energy
+			alloys = @battlecruiser_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 6
+	}
+
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 10
+				uses_standard_ship_sizes = yes
+			}
+		}
+	}
+}
+
+rs_carrier = {
+	formation_priority = @carrier_formation_priority
+	max_speed = @carrier_max_speed
+	acceleration = @carrier_acceleration
+	rotation_speed = @carrier_rotation_speed
+	collision_radius = @carrier_collision_radius
+
+	modifier = { 
+		ship_evasion_add = @carrier_evasion
+		ship_piracy_suppression_add = @carrier_piracy_suppression
+		ship_tracking_add = @dreadnought_tracking_debuff
+	}
+
+	max_hitpoints = @carrier_hp
+	size_multiplier = @carrier_naval_cap
+	fleet_slot_size = @carrier_fleet_slot
+	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
+	num_target_locators = 5
+	is_space_station = no
+	icon = ship_size_rs_carrier
+	base_buildtime = @carrier_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	
+	prerequisites = { "tech_rs_carriers" }
+
+	default_behavior = carrier
+	combat_disengage_chance = @carrier_disengage_chance
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	#required_component_set = "aux_power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @carrier_upkeep_energy
+			alloys = @carrier_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 8
+	}
+
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 15
+				uses_standard_ship_sizes = yes
+			}
+			modifier = {
+				factor = 3
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+}
+
+rs_dreadnought = {
+	formation_priority = @dreadnought_formation_priority
+	max_speed = @dreadnought_max_speed
+	acceleration = @dreadnought_acceleration
+	rotation_speed = @dreadnought_rotation_speed
+	collision_radius = @dreadnought_collision_radius
+
+	modifier = { 
+		ship_evasion_add = @dreadnought_evasion
+		ship_piracy_suppression_add = @dreadnought_piracy_suppression
+	}
+
+	max_hitpoints = @dreadnought_hp
+	size_multiplier = @dreadnought_naval_cap
+	fleet_slot_size = @dreadnought_fleet_slot
+	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_rs_dreadnought
+	base_buildtime = @dreadnought_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	
+	prerequisites = { "tech_rs_dreadnoughts" }
+	
+	default_behavior = artillery
+	combat_disengage_chance = @dreadnought_disengage_chance
+	
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "aux_power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @dreadnought_upkeep_energy
+			alloys = @dreadnought_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 10
+	}
+
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 25
+				uses_standard_ship_sizes = yes
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { is_preferred_weapons = weapon_type_strike_craft }
+			}
+		}
+	}
+}
+
+
+rs_heavy_dreadnought = {
+	formation_priority = @heavy_dreadnought_formation_priority
+	max_speed = @heavy_dreadnought_max_speed
+	acceleration = @heavy_dreadnought_acceleration
+	rotation_speed = @heavy_dreadnought_rotation_speed
+	collision_radius = @heavy_dreadnought_collision_radius
+
+	modifier = { 
+		ship_evasion_add = @heavy_dreadnought_evasion
+		ship_piracy_suppression_add = @heavy_dreadnought_piracy_suppression
+		ship_tracking_add = @heavy_dreadnought_tracking_debuff
+	}
+
+	max_hitpoints = @heavy_dreadnought_hp
+	size_multiplier = @heavy_dreadnought_naval_cap
+	fleet_slot_size = @heavy_dreadnought_fleet_slot
+	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "stern" = { locator = "part5" } }
+	num_target_locators = 4
+	is_space_station = no
+	icon = ship_size_rs_heavy_dreadnought
+	base_buildtime = @heavy_dreadnought_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	
+	prerequisites = { "tech_rs_heavy_dreadnoughts" }
+	
+	default_behavior = artillery
+	combat_disengage_chance = @heavy_dreadnought_disengage_chance
+	
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "aux_power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			is_scope_type = megastructure
+		}
+	}
+
+	possible_construction = {
+		custom_tooltip = {
+			fail_text = starbase_citadel_trigger
+			OR = {
+				is_scope_type = megastructure
+				AND = {
+					is_scope_type = starbase
+					has_starbase_size >= starbase_citadel
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = ships
+		upkeep = {
+			energy = @heavy_dreadnought_upkeep_energy
+			alloys = @heavy_dreadnought_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 12
+	}
+
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 25
+				uses_standard_ship_sizes = yes
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { is_preferred_weapons = weapon_type_strike_craft }
+			}
+		}
+	}
+}

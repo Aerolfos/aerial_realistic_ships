@@ -1,0 +1,456 @@
+@battleship_scale = 24.0
+
+##################         	 BATTLESHIP           ########################
+
+# FRAME
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_entity"
+	pdxmesh = "nemesis_01_battleship_frame_mesh"
+	
+	locator = { name = "part1"	position = { 0 0 -12.8 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 -6.19 } rotation = { 0 0 0 } }
+	locator = { name = "part3"	position = { 0 0 6.19 } rotation = { 0 0 0 } }
+	locator = { name = "part4"	position = { 0 0 18.19 } rotation = { 0 0 0 } }
+	locator = { name = "part5"	position = { 0 0 24.80 } rotation = { 0 0 0 } }
+	
+
+	default_state = "idle"
+	state = { name = "idle"	animation = "idle" animation_blend_time = 4.0
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_nemesis_battleship_hum" } }
+	}
+	state = { name = "moving"	animation = "idle" animation_blend_time = 4.0
+		event = { trigger_once = yes sound = { soundeffect = "sfx_nemesis_battleship_moving_out" } }
+	}
+	state = { name = "death" animation = "death" animation_blend_time = 0.0 chance = 1 looping = no
+		event = { time = 3.26 node = "explosion_locator_01" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 3.26 node = "explosion_locator_01" particle = "ship_burn_particle" }
+
+		event = { time = 4.26 node = "explosion_locator_02" particle = "nemesis_01_2_ship_explosion_effect" }
+		
+		event = { time = 11.63 node = "explosion_locator_03" particle = "nemesis_0125_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+
+		event = { time = 8.26 node = "explosion_locator_04" particle = "ship_burn_particle" }
+		event = { time = 8.26 node = "explosion_locator_04" particle = "nemesis_0125_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+
+		event = { time = 16.4 node = "part2" particle = "nemesis_01_350_large_ship_explosion" sound = { soundeffect = "ship_destroyed" } }
+	}
+	state = { name = "death" animation = "death2" animation_blend_time = 0.0 chance = 1 looping = no
+		event = { time = 2.56 node = "explosion_locator_01" particle = "ship_explosion_air_vent_particle" }
+		event = { time = 2.56 node = "explosion_locator_01" particle = "ship_burn_particle" }
+
+		event = { time = 4.56 node = "explosion_locator_02" particle = "nemesis_01_2_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 7.00 node = "explosion_locator_03" particle = "nemesis_0125_ship_explosion_effect" }
+
+		event = { time = 6.56 node = "part2_front_locator" particle = "nemesis_01_2_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 6.56 node = "part2_front_locator" particle = "ship_burn_particle" }
+
+
+		event = { time = 9.7 node = "explosion_locator_04" particle = "ship_explosion_air_vent_particle" sound = { soundeffect = "ship_explosion"} }
+		event = { time = 9.7 node = "explosion_locator_04" particle = "ship_burn_particle" }
+		event = { time = 11.7 node = "explosion_locator_05" particle = "nemesis_01_2_ship_explosion_effect" }
+
+		event = { time = 16.4 node = "part2_back_locator" particle = "nemesis_01_large_ship_explosion" }
+		event = { time = 16.4 node = "explosion_locator_05" particle = "nemesis_01_large_ship_explosion" sound = { soundeffect = "ship_destroyed" }}
+	}
+	state = { name = "death" animation = "death3" animation_blend_time = 0.0 chance = 1 looping = no
+		event = { time = 1.0 node = "explosion_locator_01" particle = "ship_burn_particle" }
+		event = { time = 1.0 node = "explosion_locator_01" particle = "nemesis_0125_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+
+		event = { time = 1.7 node = "explosion_locator_02" particle = "nemesis_0125_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+
+		event = { time = 3.7 node = "explosion_locator_03" particle = "ship_burn_particle" }
+		event = { time = 3.7 node = "explosion_locator_03" particle = "nemesis_0125_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+
+		event = { time = 6.0 node = "explosion_locator_04" particle = "ship_burn_particle" }
+		event = { time = 6.0 node = "explosion_locator_04" particle = "nemesis_0125_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+
+		event = { time = 9.3 node = "explosion_locator_05" particle = "nemesis_0125_ship_explosion_effect" sound = { soundeffect = "ship_explosion"} }
+
+		event = { time = 16.4 node = "part2" particle = "nemesis_01_350_large_ship_explosion" sound = { soundeffect = "ship_destroyed" } }
+	}
+
+	scale = 1.2
+
+	game_data = {
+		size = @battleship_scale
+		emissive_recolor_crunch = 5.0
+	}
+	
+}
+
+
+
+# BOW
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_bow_L2_entity"
+	pdxmesh = "nemesis_01_battleship_bow_L2_mesh"
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_bow_XL1_entity"
+	pdxmesh = "nemesis_01_battleship_bow_XL_mesh"
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+
+	# XL weapon windup locator names: xl_windup_1-10
+}
+
+
+
+#MID1
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid1_L2M2_entity"
+	pdxmesh = "nemesis_01_battleship_mid_L2_M2_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "medium_gun_03"	position = { 6.2 -0.2 4 } rotation = { 0 0 -110 } }
+	locator = { name = "medium_gun_04"	position = { -6.2 -0.2 4 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_03"	position = { 6.2 -0.2 0.6 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_04"	position = { -6.2 -0.2 0.6 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_M2_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_M2_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid1_L3_entity"
+	pdxmesh = "nemesis_01_battleship_mid_L3_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_04"	position = { 6.2 -0.2 -0.1 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_05"	position = { -6.2 -0.2 -0.1 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_L1_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_L1_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid1_M4SHB_entity"
+	pdxmesh = "nemesis_01_battleship_mid_M4_SHB_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_04"	position = { 6.2 -0.2 -0.1 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_05"	position = { -6.2 -0.2 -0.1 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_L1_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_L1_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+#MID2
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid2_L2M2_entity"
+	pdxmesh = "nemesis_01_battleship_mid_L2_M2_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "medium_gun_03"	position = { 6.2 -0.2 4 } rotation = { 0 0 -110 } }
+	locator = { name = "medium_gun_04"	position = { -6.2 -0.2 4 } rotation = { 0 0 110 } }
+	locator = { name = "medium_gun_05"	position = { 6.2 -0.2 0.6 } rotation = { 0 0 -110 } }
+	locator = { name = "medium_gun_06"	position = { -6.2 -0.2 0.6 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_M2_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_M2_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid2_L3_entity"
+	pdxmesh = "nemesis_01_battleship_mid_L3_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_04"	position = { 6.2 -0.2 -0.1 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_05"	position = { -6.2 -0.2 -0.1 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_L1_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_L1_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid2_M4SHB_entity"
+	pdxmesh = "nemesis_01_battleship_mid_M4_SHB_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_04"	position = { 6.2 -0.2 -0.1 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_05"	position = { -6.2 -0.2 -0.1 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_L1_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_L1_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+#MID3
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid3_L2M2_entity"
+	pdxmesh = "nemesis_01_battleship_mid_L2_M2_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "medium_gun_03"	position = { 6.2 -0.2 4 } rotation = { 0 0 -110 } }
+	locator = { name = "medium_gun_04"	position = { -6.2 -0.2 4 } rotation = { 0 0 110 } }
+	locator = { name = "medium_gun_05"	position = { 6.2 -0.2 0.6 } rotation = { 0 0 -110 } }
+	locator = { name = "medium_gun_06"	position = { -6.2 -0.2 0.6 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_M2_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_M2_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid3_L3_entity"
+	pdxmesh = "nemesis_01_battleship_mid_L3_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_04"	position = { 6.2 -0.2 -0.1 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_05"	position = { -6.2 -0.2 -0.1 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_L1_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_L1_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_mid3_M4SHB_entity"
+	pdxmesh = "nemesis_01_battleship_mid_M4_SHB_mesh"
+	
+	locator = { name = "part5"	position = { 3 1 8 } rotation = { 0 0 -110 } }
+	locator = { name = "part6"	position = { -3 1 8 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_04"	position = { 6.2 -0.2 -0.1 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_05"	position = { -6.2 -0.2 -0.1 } rotation = { 0 0 110 } }
+	attach = { part5 = "nemesis_01_cruiser_bow_L1_entity" }
+	attach = { part6 = "nemesis_01_cruiser_bow_L1_entity" }
+
+	default_state = "idle"
+	state = { name = idle	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = moving	state_time = 5
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death" state_time = 5 }
+}
+
+# STERN
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_stern_L1_entity"
+	pdxmesh = "nemesis_01_battleship_stern_L1_mesh"
+	
+	locator = { name = "part11"	position = { 3 1 4 } rotation = { 0 0 -110 } }
+	locator = { name = "part12"	position = { -3 1 4 } rotation = { 0 0 110 } }
+	locator = { name = "large_gun_02"	position = { 6.2 -0.2 8 } rotation = { 0 0 -110 } }
+	locator = { name = "large_gun_03"	position = { -6.2 -0.2 8 } rotation = { 0 0 110 } }
+	attach = { part11 = "nemesis_01_cruiser_stern_M1_entity" }
+	attach = { part12 = "nemesis_01_cruiser_stern_M1_entity" }
+
+	default_state = idle
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "nemesis_01_075_ship_exhaust" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_medium_01" particle = "nemesis_01_050_ship_exhaust" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "nemesis_01_050_ship_exhaust" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_small_01" particle = "nemesis_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "nemesis_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death" state_time = 5 }
+
+	game_data = {
+		trail_locators = {
+			"engine_medium_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_medium_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_medium_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_medium_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+		}
+	}
+}
+
+entity = {
+	name = "nemesis_01_rs_heavy_dreadnought_stern_M2_entity"
+	pdxmesh = "nemesis_01_battleship_stern_M2_mesh"
+	
+	locator = { name = "part11"	position = { 3 1 5 } rotation = { 0 0 -110 } }
+	locator = { name = "part12"	position = { -3 1 5 } rotation = { 0 0 110  } }
+	locator = { name = "medium_gun_03"	position = { 6.2 -0.2 9 } rotation = { 0 0 -110 } }
+	locator = { name = "medium_gun_04"	position = { -6.2 -0.2 9 } rotation = { 0 0 110 } }
+	attach = { part11 = "nemesis_01_cruiser_stern_M1_entity" }
+	attach = { part12 = "nemesis_01_cruiser_stern_M1_entity" }
+
+	default_state = idle
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "generic_075_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_medium_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_small_01" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "generic_05_exhaust_circle_idle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_large_01" particle = "nemesis_01_075_ship_exhaust" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_medium_01" particle = "nemesis_01_050_ship_exhaust" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "nemesis_01_050_ship_exhaust" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "engine_small_01" particle = "nemesis_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_small_02" particle = "nemesis_01_035_ship_exhaust" trigger_once = yes keep_particle = yes }
+
+		event = { time = 0 node = "light_01" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_02" particle = "nemesis_01_ship_light_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = { name = "death" state_time = 5 }
+
+	game_data = {
+		trail_locators = {
+			"engine_medium_01" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_medium_02" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_medium_03" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+			"engine_medium_04" = 		{ width = @medium_trail_W 	length = @medium_trail_L   	}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+﻿l_english:
+ #########################################
+ # Hull Sizes                            #  
+ #########################################
+ rs_auxiliary_cruiser:0 "Auxiliary Cruiser"
+ rs_auxiliary_cruiser_plural:0 "Auxiliary Cruisers"
+ rs_support_cruiser:0 "Support Cruiser"
+ rs_support_cruiser_plural:0 "Support Cruisers"
+ rs_ea_cruiser:0 "Electronic Attack Cruiser"
+ rs_ea_cruiser_plural:0 "Electronic Attack Cruisers"
+ rs_battlecruiser:0 "Battlecruiser"
+ rs_battlecruiser_plural:0 "Battlecruisers"
+ rs_carrier:0 "Fleet Carrier"
+ rs_carrier_plural:0 "Fleet Carriers"
+ rs_dreadnought:0 "Dreadnought"
+ rs_dreadnought_plural:0 "Dreadnoughts"
+ rs_heavy_dreadnought:0 "Heavy Dreadnought"
+ rs_heavy_dreadnought_plural:0 "Heavy Dreadnoughts"
+ #########################################
+ # Modifiers                             #
+ #########################################
+ mod_shipsize_rs_auxiliary_cruiser_build_speed_mult:0 "Auxiliary Cruiser Build Speed"
+ mod_shipsize_rs_auxiliary_cruiser_cost_mult:0 "Auxiliary Cruiser Build Cost"
+ mod_shipsize_rs_auxiliary_cruiser_upkeep_mult:0 "Auxiliary Cruiser Upkeep"
+ mod_shipsize_rs_auxiliary_cruiser_hull_mult:0 "Auxiliary Cruiser Hull Points"
+ mod_shipsize_rs_auxiliary_cruiser_hull_add:0 "$mod_shipsize_rs_auxiliary_cruiser_hull_mult$"
+
+ mod_shipsize_rs_support_cruiser_build_speed_mult:0 "Support Cruiser Build Speed"
+ mod_shipsize_rs_support_cruiser_cost_mult:0 "Support Cruiser Build Cost"
+ mod_shipsize_rs_support_cruiser_upkeep_mult:0 "Support Cruiser Upkeep"
+ mod_shipsize_rs_support_cruiser_hull_mult:0 "Support Cruiser Hull Points"
+ mod_shipsize_rs_support_cruiser_hull_add:0 "$mod_shipsize_rs_support_cruiser_hull_mult$"
+
+ mod_shipsize_rs_ea_cruiser_build_speed_mult:0 "Electronic Attack Cruiser Build Speed"
+ mod_shipsize_rs_ea_cruiser_cost_mult:0 "Electronic Attack Cruiser Build Cost"
+ mod_shipsize_rs_ea_cruiser_upkeep_mult:0 "Electronic Attack Cruiser Upkeep"
+ mod_shipsize_rs_ea_cruiser_hull_mult:0 "Electronic Attack Cruiser Hull Points"
+ mod_shipsize_rs_ea_cruiser_hull_add:0 "$mod_shipsize_rs_ea_cruiser_hull_mult$"
+
+ mod_shipsize_rs_battlecruiser_build_speed_mult:0 "Battlecruiser Build Speed"
+ mod_shipsize_rs_battlecruiser_cost_mult:0 "Battlecruiser Build Cost"
+ mod_shipsize_rs_battlecruiser_upkeep_mult:0 "Battlecruiser Upkeep"
+ mod_shipsize_rs_battlecruiser_hull_mult:0 "Battlecruiser Hull Points"
+ mod_shipsize_rs_battlecruiser_hull_add:0 "$mod_shipsize_rs_battlecruiser_hull_mult$"
+
+ mod_shipsize_rs_carrier_build_speed_mult:0 "$rs_carrier$ Build Speed"
+ mod_shipsize_rs_carrier_cost_mult:0 "$rs_carrier$ Build Cost"
+ mod_shipsize_rs_carrier_upkeep_mult:0 "$rs_carrier$ Upkeep"
+ mod_shipsize_rs_carrier_hull_mult:0 "$rs_carrier$ Hull Points"
+ mod_shipsize_rs_carrier_hull_add:0 "$mod_shipsize_rs_carrier_hull_mult$"
+
+ mod_shipsize_rs_dreadnought_build_speed_mult:0 "Dreadnought Build Speed"
+ mod_shipsize_rs_dreadnought_cost_mult:0 "Dreadnought Build Cost"
+ mod_shipsize_rs_dreadnought_upkeep_mult:0 "Dreadnought Upkeep"
+ mod_shipsize_rs_dreadnought_hull_mult:0 "Dreadnought Hull Points"
+ mod_shipsize_rs_dreadnought_hull_add:0 "$mod_shipsize_rs_dreadnought_hull_mult$"
+
+ mod_shipsize_rs_heavy_dreadnought_build_speed_mult:0 "Heavy Dreadnought Build Speed"
+ mod_shipsize_rs_heavy_dreadnought_cost_mult:0 "Heavy Dreadnought Build Cost"
+ mod_shipsize_rs_heavy_dreadnought_upkeep_mult:0 "Heavy Dreadnought Upkeep"
+ mod_shipsize_rs_heavy_dreadnought_hull_mult:0 "Heavy Dreadnought Hull Points"
+ mod_shipsize_rs_heavy_dreadnought_hull_add:0 "$mod_shipsize_rs_heavy_dreadnought_hull_mult$"

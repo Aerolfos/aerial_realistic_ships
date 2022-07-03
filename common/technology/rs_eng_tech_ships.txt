@@ -1,0 +1,373 @@
+##################################
+### RS CUSTOM ENGINEERING TECH ###
+##################################
+
+####################
+### SHIP CLASSES ###
+####################
+
+tech_rs_auxiliary_cruisers = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { voidcraft }	
+	prerequisites = { "tech_cruisers" }
+	weight = @tier3weight1
+	
+	gateway = ship
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_RS_AUXILIARY_CRUISERS_TITLE"
+			desc = "TECH_UNLOCK_RS_AUXILIARY_CRUISERS_DESC"
+		}
+	}
+	
+	modifier = {
+		country_command_limit_add = 10
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 20 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_cruisers
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 30
+		}
+		modifier = {
+			factor = 3
+			years_passed > 35
+		}
+		modifier = {
+			factor = 4
+			years_passed > 40
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+            factor = 1.25
+            is_bugged_war_engineers = yes
+        }
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = @ai_ship_types_factor
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_rs_battlecruisers = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_cruisers" }
+	weight = @tier3weight2
+	
+	gateway = ship
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_RS_BATTLECRUISER_TITLE"
+			desc = "TECH_UNLOCK_RS_BATTLECRUISER_DESC"
+		}
+	}
+
+	modifier = {
+		country_command_limit_add = 10
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 30 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_rs_battlecruisers
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 40
+		}
+		modifier = {
+			factor = 3
+			years_passed > 45
+		}
+		modifier = {
+			factor = 4
+			years_passed > 50
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+            factor = 1.25
+            is_bugged_war_engineers = yes
+        }
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = @ai_ship_types_factor
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_rs_carriers = {
+	cost = @tier4cost2
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_battleships" }
+	weight = @tier4weight2
+
+	gateway = ship
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_RS_CARRIER_TITLE"
+			desc = "TECH_UNLOCK_RS_CARRIER_DESC"
+		}
+	}
+
+	modifier = {
+		country_command_limit_add = 10
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_rs_carriers
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 3
+			years_passed > 65
+		}
+		modifier = {
+			factor = 4
+			years_passed > 70
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+            factor = 1.25
+            is_bugged_war_engineers = yes
+        }
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = @ai_ship_types_factor
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_rs_dreadnoughts = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_battleships" "tech_rs_carriers" }
+	weight = @tier4weight3
+	
+	prereqfor_desc = {
+		
+		ship = {
+			title = "TECH_UNLOCK_RS_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_RS_DREADNOUGHT_DESC"
+		}
+	}
+
+	modifier = {
+		country_command_limit_add = 10
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 70 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_rs_dreadnoughts
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+		modifier = {
+			factor = 3
+			years_passed > 85
+		}
+		modifier = {
+			factor = 4
+			years_passed > 90
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+            factor = 1.25
+            is_bugged_war_engineers = yes
+        }
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = @ai_ship_types_factor
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+tech_rs_heavy_dreadnoughts = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_rs_dreadnoughts" "tech_titans" }
+	weight = @tier5weight3
+	ai_update_type = military
+
+	modifier = {
+		country_command_limit_add = 10
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_RS_HEAVY_DREADNOUGHT_TITLE"
+			desc = "TECH_UNLOCK_RS_HEAVY_DREADNOUGHT_DESC"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 100 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_titans
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 130
+		}
+		modifier = {
+			factor = 3
+			years_passed > 140
+		}
+		modifier = {
+			factor = 4
+			years_passed > 150
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+		modifier = {
+            factor = 1.25
+            is_bugged_war_engineers = yes
+        }
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = @ai_ship_types_factor
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+# upgrades in military theory
+# because the trees are unbalanced enough as is

@@ -1,0 +1,103 @@
+spriteTypes = {
+	# ship icons
+	spriteType = {
+		name = "GFX_ship_size_rs_support_cruiser"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_support_cruiser.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_support_cruiser_top"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_support_cruiser_top.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_support_cruiser_top_damaged"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_support_cruiser_top_damaged.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_ea_cruiser"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ea_cruiser.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_ea_cruiser_top"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ea_cruiser_top.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_ea_cruiser_top_damaged"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ea_cruiser_top_damaged.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_battlecruiser"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_battlecruiser.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_size_rs_battlecruiser_top"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_battlecruiser_top.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_battlecruiser_top_damaged"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_battlecruiser_top_damaged.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_carrier"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_carrier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_carrier_top"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_carrier_top.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_carrier_top_damaged"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_carrier_top_damaged.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_dreadnought"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_dreadnought.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_dreadnought_top"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_dreadnought_top.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_dreadnought_top_damaged"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_dreadnought_top_damaged.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_heavy_dreadnought"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_heavy_dreadnought.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_heavy_dreadnought_top"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_heavy_dreadnought_top.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_size_rs_heavy_dreadnought_top_damaged"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_heavy_dreadnought_top_damaged.dds"
+	}
+
+	# components
+	spriteType = {
+		name = "GFX_ship_part_aura_escape"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_aura_escape.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_aura_tracking_jammer"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_aura_tracking_jammer.dds"
+	}
+}

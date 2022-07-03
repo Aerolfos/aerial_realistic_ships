@@ -1,0 +1,16 @@
+ship_behavior = {
+	name = "adv_carrier"
+	preferred_attack_range = 220
+	formation_distance = 210
+	return_to_formation_distance = 200
+
+	combat_target_anchor = root
+
+	collision_awareness = 0.75
+	collision_radius = 1.0
+	collision_strafe = 2.5
+	attack_move_pattern = flee
+	passive_move_pattern = orbit
+
+	desc = "ADV_CARRIER_BEHAVIOR_DESC"
+}

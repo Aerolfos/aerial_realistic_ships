@@ -1,0 +1,43 @@
+[h3]Updated for 3.4.[/h3]
+
+[h3]Not achievement compatible.[/h3]
+
+Since Realistic Ships was not updated for when I wanted to play with it, I decided to do it myself. In the process, I came across small issues, unnecessary overwrites, and balance issues. So now after way too much effort the mod is now (mostly) properly updated.
+
+This mod features 6 new ship classes:
+
+[list]
+    [*] Support Cruisers
+    [*] Electronic Attack Cruisers
+    [*] Battlecruisers
+	[*] Fleet Carriers
+	[*] Dreadnoughts
+	[*] Heavy Dreadnoughts
+[/list]
+
+These ships double down on the vanilla counters:
+
+[list]
+    [*] Small ships beat large artillery ships
+    [*] Carriers beat small ships
+    [*] Artillery ships beat carriers
+[/list]
+
+In order to help facilitate this, the H slot sections were removed from battleships, so cruisers (refitted to light carriers) and full fleet carriers are the only source of strike craft.
+
+In return, battleships got new sections, for example missiles are now actually usable on larger ships. PD also appears on larger ships, which helps counter strike craft dominance.
+
+Battlecruisers specifically can be kitted out with full PD or S, allowing them to serve both a picket role in capital fleets, and a flagship role in non-capital fleets.
+
+Not sure what to do about Heavy Dreadnoughts, so they also have PD and S slots since a giant flagship rushing into a horde of corvettes and tearing them up with autocannon spam is hilarious. PD makes them scary fleet anchors for carriers.
+
+[u]Destroyers and battleships are overwritten to make new sections.[/u]
+
+[u]This mod should be compatible with most stuff by avoiding most overwrites. Non-vanilla shipsets will get fallback mammalian models though, for obvious reasons.[/u]
+
+Note that for the moment some sections are missing kitbashes and proper turret placements. Also no aquatics support, I don't own aquatics.
+
+[h3]Credits[/h3]
+Based on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=725596168]the original Realistic Ships mod[/url] by Tal Ara'nh.
+
+As written, "Lastly, If you are going to create a separate mod/patch, feel free to use the concepts I used in this mod as mentioned in my readme above. All I ask is to give credit where it is due." This is not a true continuation of the original mod, nor intended to replace it.

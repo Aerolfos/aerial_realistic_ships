@@ -1,0 +1,160 @@
+# reference, vanilla speeds
+#@speed_very_slow = 80
+#@speed_slow = 100
+#@speed_default = 120
+#@speed_fast = 140
+#@speed_very_fast = 160
+
+##################
+# SUPPORT CRUISER
+##################
+
+@support_cruiser_collision_radius = 3.5
+@support_cruiser_formation_priority = 38
+
+# slightly faster than regular cruiser
+@support_cruiser_acceleration = 0.3
+@support_cruiser_rotation_speed = 0.182
+
+@support_cruiser_max_speed = 125
+
+@support_cruiser_naval_cap = 5
+@support_cruiser_fleet_slot = 3
+
+@support_cruiser_hp = 1400
+@support_cruiser_evasion = 20
+@support_cruiser_disengage_chance = 1.60
+@support_cruiser_piracy_suppression = 6
+@support_cruiser_build_time = 280
+
+@support_cruiser_upkeep_energy = 2
+@support_cruiser_upkeep_alloys = 0.4
+
+##################
+# EA CRUISER
+##################
+
+@ea_cruiser_collision_radius = 3.5
+@ea_cruiser_formation_priority = 36
+
+# slightly faster than regular cruiser
+@ea_cruiser_acceleration = 0.3
+@ea_cruiser_rotation_speed = 0.182
+
+@ea_cruiser_max_speed = 125
+
+@ea_cruiser_naval_cap = 5
+@ea_cruiser_fleet_slot = 3
+
+@ea_cruiser_hp = 1600
+@ea_cruiser_evasion = 20
+@ea_cruiser_disengage_chance = 1.60
+@ea_cruiser_piracy_suppression = 6
+@ea_cruiser_build_time = 280
+
+@ea_cruiser_upkeep_energy = 2
+@ea_cruiser_upkeep_alloys = 0.4
+
+##################
+# BATTLECRUISER
+##################
+
+@battlecruiser_collision_radius = 4
+@battlecruiser_formation_priority = 34
+
+@battlecruiser_acceleration = 0.3
+@battlecruiser_rotation_speed = 0.182
+
+@battlecruiser_max_speed = 120
+
+@battlecruiser_naval_cap = 6
+@battlecruiser_fleet_slot = 4
+
+@battlecruiser_hp = 2000
+@battlecruiser_evasion = 8
+@battlecruiser_disengage_chance = 1.35
+@battlecruiser_piracy_suppression = 8
+@battlecruiser_build_time = 360
+
+@battlecruiser_upkeep_energy = 1.8
+@battlecruiser_upkeep_alloys = 0.6
+
+##################
+# CARRIER
+##################
+
+@carrier_collision_radius = 5
+@carrier_formation_priority = 34
+
+# slightly faster than battleships for formation purposes
+@carrier_acceleration = 0.2
+@carrier_rotation_speed = 0.162
+
+# opportunity cost, slow down your fleet but get carriers
+@carrier_max_speed = 95
+
+@carrier_naval_cap = 10
+@carrier_fleet_slot = 5
+
+@carrier_hp = 3000
+@carrier_evasion = 5
+@carrier_disengage_chance = 1.25
+@carrier_piracy_suppression = 6
+@carrier_build_time = 500
+
+@carrier_upkeep_energy = 2.6
+@carrier_upkeep_alloys = 0.8
+
+##################
+# DREADNOUGHT
+##################
+
+@dreadnought_collision_radius = 8
+@dreadnought_formation_priority = 55
+
+# nothing in vanilla is slower than this, even juggernauts
+@dreadnought_acceleration = 0.2
+@dreadnought_rotation_speed = 0.15
+
+@dreadnought_max_speed = 95
+
+@dreadnought_naval_cap = 12
+@dreadnought_fleet_slot = 6
+
+@dreadnought_tracking_debuff = -10
+
+@dreadnought_hp = 6000
+@dreadnought_evasion = 5
+@dreadnought_disengage_chance = 1.10
+@dreadnought_piracy_suppression = 4
+@dreadnought_build_time = 540
+
+@dreadnought_upkeep_energy = 2.6
+@dreadnought_upkeep_alloys = 0.9
+
+##################
+# HEAVY DREADNOUGHT
+##################
+
+@heavy_dreadnought_collision_radius = 10
+@heavy_dreadnought_formation_priority = 45
+
+# nothing in vanilla is slower than this, even juggernauts
+@heavy_dreadnought_acceleration = 0.2
+@heavy_dreadnought_rotation_speed = 0.15
+
+@heavy_dreadnought_max_speed = 90
+
+@heavy_dreadnought_naval_cap = 16
+@heavy_dreadnought_fleet_slot = 7
+
+@heavy_dreadnought_tracking_debuff = -30
+
+@heavy_dreadnought_hp = 9000
+@heavy_dreadnought_evasion = 0
+@heavy_dreadnought_disengage_chance = 1.00
+@heavy_dreadnought_piracy_suppression = 2
+@heavy_dreadnought_build_time = 960
+
+@heavy_dreadnought_upkeep_energy = 3.0
+@heavy_dreadnought_upkeep_alloys = 1

@@ -1,0 +1,29 @@
+# This is a nonexistant dummy tech that gates some sections
+# Making them (supposedly) impossible to obtain
+
+tech_rs_THIS_TECH_SHOULD_BE_IMPOSSIBLE_TO_GET = {
+	cost = 9999999
+	area = physics
+	tier = 5
+	category = { particles }
+	prerequisites = {  }
+	weight = 0
+
+	potential = {
+		always = no
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}

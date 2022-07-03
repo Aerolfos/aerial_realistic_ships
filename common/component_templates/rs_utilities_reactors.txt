@@ -1,0 +1,555 @@
+#############################
+### RS UTILITIES REACTORS ###
+#############################
+
+#################
+### VARIABLES ###
+#################
+
+@heavy_cruiser_power_1 = 280
+@heavy_cruiser_power_2 = 360
+@heavy_cruiser_power_3 = 480
+@heavy_cruiser_power_4 = 620
+@heavy_cruiser_power_5 = 800
+@heavy_cruiser_power_6 = 1030
+
+@heavy_battleship_power_1 = 650
+@heavy_battleship_power_2 = 820
+@heavy_battleship_power_3 = 1050
+@heavy_battleship_power_4 = 1350
+@heavy_battleship_power_5 = 1650
+@heavy_battleship_power_6 = 2500
+
+@heavy_cruiser_cost_1 = 40
+@heavy_cruiser_cost_2 = 52
+@heavy_cruiser_cost_3 = 68
+@heavy_cruiser_cost_4 = 88
+@heavy_cruiser_cost_5 = 112
+@heavy_cruiser_cost_6 = 148
+
+@heavy_battleship_cost_1 = 90
+@heavy_battleship_cost_2 = 117
+@heavy_battleship_cost_3 = 152
+@heavy_battleship_cost_4 = 197
+@heavy_battleship_cost_5 = 256
+@heavy_battleship_cost_6 = 332
+
+########################
+### FISSION REACTORS ###
+########################
+
+utility_component_template = {
+	key = "HEAVY_CRUISER_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = @heavy_cruiser_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_cruiser_cost_1
+		}	
+		upkeep = {
+			energy = 0.40
+			alloys = 0.04
+		}
+	}
+	
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier }
+	upgrades_to = "HEAVY_CRUISER_FUSION_REACTOR"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "HEAVY_BATTLESHIP_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = @heavy_battleship_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_1
+		}	
+		upkeep = {
+			energy = 0.80
+			alloys = 0.08
+		}
+	}
+	
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { rs_carrier rs_dreadnought rs_heavy_dreadnought }	
+	upgrades_to = "HEAVY_BATTLESHIP_FUSION_REACTOR"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "DREADNOUGHT_SECONDARY_FISSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = @heavy_battleship_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_1
+		}	
+		upkeep = {
+			energy = 0.80
+			alloys = 0.08
+		}
+	}
+	
+	prerequisites = { "tech_fission_power" }
+	component_set = "aux_power_core"
+	size_restriction = { rs_heavy_dreadnought }	
+	upgrades_to = "DREADNOUGHT_SECONDARY_FUSION_REACTOR"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+#######################
+### FUSION REACTORS ###
+#######################
+
+utility_component_template = {
+	key = "HEAVY_CRUISER_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	power = @heavy_cruiser_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_cruiser_cost_2
+		}	
+		upkeep = {
+			energy = 0.52
+			alloys = 0.052
+		}
+	}
+	
+	prerequisites = { "tech_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	upgrades_to = "HEAVY_CRUISER_COLD_FUSION_REACTOR"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "HEAVY_BATTLESHIP_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	power = @heavy_battleship_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_2
+		}	
+		upkeep = {
+			energy = 1.04
+			alloys = 0.104
+		}
+	}
+	
+	prerequisites = { "tech_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { rs_carrier rs_dreadnought rs_heavy_dreadnought }	
+	upgrades_to = "HEAVY_BATTLESHIP_COLD_FUSION_REACTOR"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "DREADNOUGHT_SECONDARY_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	power = @heavy_battleship_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_2
+		}	
+		upkeep = {
+			energy = 1.04
+			alloys = 0.104
+		}
+	}
+	
+	prerequisites = { "tech_fusion_power" }
+	component_set = "aux_power_core"
+	size_restriction = { rs_heavy_dreadnought }	
+	upgrades_to = "DREADNOUGHT_SECONDARY_COLD_FUSION_REACTOR"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+############################
+### COLD FUSION REACTORS ###
+############################
+
+utility_component_template = {
+	key = "HEAVY_CRUISER_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	power = @heavy_cruiser_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_cruiser_cost_3
+		}	
+		upkeep = {
+			energy = 0.68
+			alloys = 0.068
+		}
+	}
+	
+	prerequisites = { "tech_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	upgrades_to = "HEAVY_CRUISER_ANTIMATTER_REACTOR"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "HEAVY_BATTLESHIP_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	power = @heavy_battleship_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_3
+		}	
+		upkeep = {
+			energy = 1.35
+			alloys = 0.135
+		}
+	}
+	
+	prerequisites = { "tech_cold_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { rs_carrier rs_dreadnought rs_heavy_dreadnought }	
+	upgrades_to = "HEAVY_BATTLESHIP_ANTIMATTER_REACTOR"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "DREADNOUGHT_SECONDARY_COLD_FUSION_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	power = @heavy_battleship_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_3
+		}	
+		upkeep = {
+			energy = 1.35
+			alloys = 0.135
+		}
+	}
+	
+	prerequisites = { "tech_cold_fusion_power" }
+	component_set = "aux_power_core"
+	size_restriction = { rs_heavy_dreadnought }	
+	upgrades_to = "DREADNOUGHT_SECONDARY_ANTIMATTER_REACTOR"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+###########################
+### ANTIMATTER REACTORS ###
+###########################
+
+utility_component_template = {
+	key = "HEAVY_CRUISER_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = @heavy_cruiser_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_cruiser_cost_4
+		}	
+		upkeep = {
+			energy = 0.88
+			alloys = 0.088
+		}
+	}
+	
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	upgrades_to = "HEAVY_CRUISER_ZERO_POINT_REACTOR"
+	
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "HEAVY_BATTLESHIP_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = @heavy_battleship_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_4
+		}	
+		upkeep = {
+			energy = 1.76
+			alloys = 0.176
+		}
+	}
+	
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { rs_carrier rs_dreadnought rs_heavy_dreadnought }	
+	upgrades_to = "HEAVY_BATTLESHIP_ZERO_POINT_REACTOR"
+	
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "DREADNOUGHT_SECONDARY_ANTIMATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = @heavy_battleship_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_4
+		}	
+		upkeep = {
+			energy = 1.76
+			alloys = 0.176
+		}
+	}
+	
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "aux_power_core"
+	size_restriction = { rs_heavy_dreadnought }	
+	upgrades_to = "DREADNOUGHT_SECONDARY_ZERO_POINT_REACTOR"
+	
+	ai_weight = {
+		weight = 4
+	}
+}
+
+###########################
+### ZERO-POINT REACTORS ###
+###########################
+
+utility_component_template = {
+	key = "HEAVY_CRUISER_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = @heavy_cruiser_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_cruiser_cost_5
+		}
+		upkeep = {
+			energy = 1.14
+			alloys = 0.114
+		}
+	}
+	
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	upgrades_to = "HEAVY_CRUISER_DARK_MATTER_REACTOR"
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "HEAVY_BATTLESHIP_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = @heavy_battleship_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_5
+		}
+		upkeep = {
+			energy = 2.29
+			alloys = 0.229
+		}
+	}
+	
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { rs_carrier rs_dreadnought rs_heavy_dreadnought }	
+	upgrades_to = "HEAVY_BATTLESHIP_DARK_MATTER_REACTOR"
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "DREADNOUGHT_SECONDARY_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = @heavy_battleship_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_5
+		}
+		upkeep = {
+			energy = 2.29
+			alloys = 0.229
+		}
+	}
+	
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "aux_power_core"
+	size_restriction = { rs_heavy_dreadnought }	
+	upgrades_to = "DREADNOUGHT_SECONDARY_DARK_MATTER_REACTOR"
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+##########################
+### ENIGMATIC REACTORS ###
+##########################
+
+utility_component_template = {
+	key = "HEAVY_CRUISER_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @heavy_cruiser_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_cruiser_cost_6
+			sr_dark_matter = 4
+		}
+		upkeep = {
+			energy = 1.48
+			alloys = 0.148
+		}
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "HEAVY_BATTLESHIP_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @heavy_battleship_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_6
+			sr_dark_matter = 8
+		}
+		upkeep = {
+			energy = 2.98
+			alloys = 0.298
+		}
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { rs_carrier rs_dreadnought rs_heavy_dreadnought }	
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DREADNOUGHT_SECONDARY_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @heavy_battleship_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @heavy_battleship_cost_6
+			sr_dark_matter = 8
+		}
+		upkeep = {
+			energy = 2.98
+			alloys = 0.298
+		}
+	}
+	
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "aux_power_core"
+	size_restriction = { rs_heavy_dreadnought }	
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}

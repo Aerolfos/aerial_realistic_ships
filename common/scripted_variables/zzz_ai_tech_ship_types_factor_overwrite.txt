@@ -1,0 +1,2 @@
+# overwrite to make ai actually get ships (and they gateway so much anyway)
+@ai_ship_types_factor = 5000 # bonus chance for ai to pick new ship techs
