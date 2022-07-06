@@ -1,0 +1,11 @@
+# Compatibility flag. Used to tell other mods that Aerial Realistic Ships was installed.
+namespace = ars_mod_flag
+event = {
+    id = ars_mod_flag.1
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = no
+    immediate = {
+        set_global_flag = "ars_realistic_ships_flag"
+    }
+}

@@ -1,0 +1,12 @@
+# Sets this mod's global flag so that other modders can check if the mod is installed.
+on_game_start = {
+    events = {
+        ars_mod_flag.1
+    }
+}
+
+on_single_player_save_game_load = {
+    events = {
+        ars_mod_flag.1
+    }
+}
