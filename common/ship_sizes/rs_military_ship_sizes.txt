@@ -261,6 +261,9 @@ rs_dreadnought = {
 	modifier = { 
 		ship_evasion_add = @dreadnought_evasion
 		ship_piracy_suppression_add = @dreadnought_piracy_suppression
+		ship_tracking_add = @dreadnought_tracking_debuff
+		ship_accuracy_add = @dreadnought_accuracy_debuff
+		ship_disengage_chance_reduction = @dreadnought_disengagement_debuff
 	}
 
 	max_hitpoints = @dreadnought_hp
@@ -328,6 +331,8 @@ rs_heavy_dreadnought = {
 		ship_evasion_add = @heavy_dreadnought_evasion
 		ship_piracy_suppression_add = @heavy_dreadnought_piracy_suppression
 		ship_tracking_add = @heavy_dreadnought_tracking_debuff
+		ship_accuracy_add = @heavy_dreadnought_accuracy_debuff
+		ship_disengage_chance_reduction = @heavy_dreadnought_disengagement_debuff
 	}
 
 	max_hitpoints = @heavy_dreadnought_hp

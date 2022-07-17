@@ -121,7 +121,9 @@
 @dreadnought_naval_cap = 12
 @dreadnought_fleet_slot = 6
 
-@dreadnought_tracking_debuff = -10
+@dreadnought_tracking_debuff = -15
+@dreadnought_accuracy_debuff = -10
+@dreadnought_disengagement_debuff = 0.10
 
 @dreadnought_hp = 6000
 @dreadnought_evasion = 5
@@ -149,6 +151,8 @@
 @heavy_dreadnought_fleet_slot = 7
 
 @heavy_dreadnought_tracking_debuff = -30
+@heavy_dreadnought_accuracy_debuff = -25
+@heavy_dreadnought_disengagement_debuff = 0.25
 
 @heavy_dreadnought_hp = 9000
 @heavy_dreadnought_evasion = 0
