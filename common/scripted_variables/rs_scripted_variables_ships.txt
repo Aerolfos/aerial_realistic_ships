@@ -147,7 +147,7 @@
 
 @heavy_dreadnought_max_speed = 90
 
-@heavy_dreadnought_naval_cap = 16
+@heavy_dreadnought_naval_cap = 32
 @heavy_dreadnought_fleet_slot = 7
 
 @heavy_dreadnought_tracking_debuff = -30
