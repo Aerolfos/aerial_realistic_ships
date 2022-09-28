@@ -1,0 +1,47 @@
+
+entity = {
+	name = "cov_01_rs_support_cruiser_entity"
+	pdxmesh = "cov_01_rs_support_cruiser_frame_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"	
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+	}
+	
+	state = { name = "moving" state_time = 5	
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+	}
+	
+	state = { name = "death" 
+		
+		event = { time = 0.0 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	state = { name = "death" 
+		
+		event = { time = 0.0 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	state = { name = "death" 
+		
+		event = { time = 0.0 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+}
+
+entity = {
+	name = "cov_01_rs_support_cruiser_bow_A1S2_entity"
+	pdxmesh = "cov_01_rs_support_cruiser_bow_A1S2_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_support_cruiser_mid_S2RDB_entity"
+	pdxmesh = "cov_01_rs_support_cruiser_mid_S2RDB_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_support_cruiser_stern_S2_entity"
+	pdxmesh = "cov_01_rs_support_cruiser_stern_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_support_cruiser_stern_M1_entity"
+	pdxmesh = "cov_01_rs_support_cruiser_stern_mesh"
+}

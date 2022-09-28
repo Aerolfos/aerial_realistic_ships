@@ -1,0 +1,59 @@
+objectTypes = {
+	pdxmesh = {
+		name = "cov_01_Flagship_frame_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_frame.mesh"
+		scale = 1.7
+
+		meshsettings = {
+			name = "KERELCASShape"
+			index = 0
+			texture_diffuse = "cov_01_Kerel_diffuse.dds"
+			texture_normal = "cov_01_Kerel_normal.dds"
+			texture_specular = "cov_01_Kerel_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	#bow	
+	pdxmesh = {
+		name = "cov_01_Flagship_bow_XL4_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_bow.mesh"
+		scale = 1.7
+	}
+	
+	pdxmesh = {
+		name = "cov_01_Flagship_bow_XL1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_bow.mesh"
+		scale = 1.7
+	}
+	
+	pdxmesh = {
+		name = "cov_01_Flagship_bow_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_bow.mesh"
+		scale = 1.7
+	}
+	
+	pdxmesh = {
+		name = "cov_01_Flagship_mid1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_mid1.mesh"
+		scale = 1.7
+	}
+	
+	pdxmesh = {
+		name = "cov_01_Flagship_mid2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_mid2.mesh"
+		scale = 1.7
+	}
+	
+	pdxmesh = {
+		name = "cov_01_Flagship_mid3_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_mid3.mesh"
+		scale = 1.7
+	}
+	
+	pdxmesh = {
+		name = "cov_01_Flagship_stern_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_Flagship_stern.mesh"
+		scale = 1.7
+	}
+}

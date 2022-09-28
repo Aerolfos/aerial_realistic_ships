@@ -1,0 +1,40 @@
+objectTypes = {
+	pdxmesh = {
+		name = "unsc_01_rs_ea_cruiser_frame_mesh"
+		file = "gfx/models/ships/unsc_01/unsc_01_rs_ea_cruiser_frame.mesh"
+		scale = 0.6
+
+		meshsettings = {
+			name = "Box002Shape"
+			index = 0
+			texture_diffuse = "unsc_01_eion_diffuse.dds"
+			texture_normal = "unsc_01_eion_normal.dds"
+			texture_specular = "unsc_01_eion_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "unsc_01_rs_ea_cruiser_bow_A1S2_mesh"
+		file = "gfx/models/ships/unsc_01/unsc_01_rs_ea_cruiser_bow.mesh"
+		scale = 0.6
+         }
+		 
+	pdxmesh = {
+		name = "unsc_01_rs_ea_cruiser_mid_A2S2_mesh"
+		file = "gfx/models/ships/unsc_01/unsc_01_rs_ea_cruiser_mid.mesh"
+		scale = 0.6
+	}
+	
+	pdxmesh = {
+		name = "unsc_01_rs_ea_cruiser_stern_mesh"
+		file = "gfx/models/ships/unsc_01/unsc_01_rs_ea_cruiser_stern.mesh"
+		scale = 0.6
+	}
+	
+	pdxmesh = {
+		name = "unsc_01_rs_ea_cruiser_stern_M1_mesh"
+		file = "gfx/models/ships/unsc_01/unsc_01_rs_ea_cruiser_stern.mesh"
+		scale = 0.6
+	}
+}

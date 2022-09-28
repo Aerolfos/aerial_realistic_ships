@@ -1,0 +1,63 @@
+
+entity = {
+	name = "cov_01_rs_ea_cruiser_entity"
+	pdxmesh = "cov_01_rs_ea_cruiser_frame_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"	
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_cruiser_hum" } }
+	}
+	
+	state = { name = "death" 
+		
+		event = { time = 0.0 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	state = { name = "death" 
+		
+		event = { time = 0.0 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+	state = { name = "death" 
+		
+		event = { time = 0.0 particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
+	}
+}
+
+entity = {
+	name = "cov_01_rs_ea_cruiser_bow_A1S2_entity"
+	pdxmesh = "cov_01_rs_ea_cruiser_bow_A1S2_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_ea_cruiser_mid_A2S2_entity"
+	pdxmesh = "cov_01_rs_ea_cruiser_mid_A2S2_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_ea_cruiser_stern_S2_entity"
+	pdxmesh = "cov_01_rs_ea_cruiser_stern_mesh"
+	
+	state = { name = "moving" state_time = 5		
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "exhaust_right_bottom" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_right_middle" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left_middle" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left_bottom" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_right_top" particle = "cov_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left_top" particle = "cov_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "cov_01_rs_ea_cruiser_stern_M1_entity"
+	pdxmesh = "cov_01_rs_ea_cruiser_stern_mesh"
+	
+	state = { name = "moving" state_time = 5		
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
+		event = { time = 0 node = "exhaust_right_bottom" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_right_middle" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left_middle" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left_bottom" particle = "cov_01_0_80_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_right_top" particle = "cov_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left_top" particle = "cov_01_1_45_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+}

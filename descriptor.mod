@@ -1,4 +1,4 @@
-version="3.4.*"
+version="3.5.*"
 tags={
 	"Graphics"
 	"Gameplay"
@@ -8,5 +8,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Aerial Realistic Ships"
-supported_version="3.4.*"
+supported_version="3.5.*"
 remote_file_id="2815979895"

@@ -1,0 +1,114 @@
+
+#######  Heavy Dreadnought Bow Sections  #######
+objectTypes = {
+
+	pdxmesh = {
+		name = "toxoid_01_rs_heavy_dreadnought_bow_L2S8_mesh"
+		file = "gfx/models/ships/toxoid_01/toxoid_01_rs_heavy_dreadnought_bow_L2S8.mesh"
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L1_M1_S2Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_01_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_01_normal.dds"
+			texture_specular = "toxoid_01_battleship_01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L1_M1_S2Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L2_1Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_01_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_01_normal.dds"
+			texture_specular = "toxoid_01_battleship_01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L2_1Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L2_2Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_01_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_01_normal.dds"
+			texture_specular = "toxoid_01_battleship_01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L2_2Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+	}
+
+	pdxmesh = {
+		name = "toxoid_01_rs_heavy_dreadnought_bow_L4_mesh"
+		file = "gfx/models/ships/toxoid_01/toxoid_01_rs_heavy_dreadnought_bow_L4.mesh"
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L2Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_01_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_01_normal.dds"
+			texture_specular = "toxoid_01_battleship_01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_L2Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+	}
+
+	pdxmesh = {
+		name = "toxoid_01_rs_heavy_dreadnought_bow_XL2_mesh"
+		file = "gfx/models/ships/toxoid_01/toxoid_01_rs_heavy_dreadnought_bow_XL2.mesh"
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_XLShape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_01_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_01_normal.dds"
+			texture_specular = "toxoid_01_battleship_01_specular.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_bow_XLShape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+	}
+
+
+
+}
+
+

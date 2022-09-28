@@ -339,11 +339,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_BOW_L2"
+	key = "RS_HEAVY_DREADNOUGHT_BOW_L4"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_bow_L2_entity"
+	entity = "rs_heavy_dreadnought_bow_L4_entity"
 	icon = "GFX_ship_part_core_bow"
 
 	ai_weight = {
@@ -390,11 +390,11 @@ ship_section_template = {
 
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_BOW_XL1"
+	key = "RS_HEAVY_DREADNOUGHT_BOW_XL2"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_bow_XL1_entity"
+	entity = "rs_heavy_dreadnought_bow_XL2_entity"
 	icon = "GFX_ship_part_core_bow"
 	
 	prerequisites = { tech_energy_lance_1 tech_energy_lance_2 tech_arc_emitter_1 tech_arc_emitter_2 tech_mass_accelerator_1 tech_mass_accelerator_2 }
@@ -529,7 +529,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid1
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid1_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid1_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -692,7 +692,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid1
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid1_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid1_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -851,11 +851,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_MID1_L2M2"
+	key = "RS_HEAVY_DREADNOUGHT_MID1_L4G4"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid1
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid1_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid1_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -882,25 +882,25 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_02"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_02"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_03"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_03"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_04"
 	}
 	
@@ -916,11 +916,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_MID1_L3"
+	key = "RS_HEAVY_DREADNOUGHT_MID1_L6"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid1
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid1_L3_entity"
+	entity = "rs_heavy_dreadnought_mid1_L6_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	ai_weight = {
@@ -1174,7 +1174,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid2
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid2_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid2_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -1337,7 +1337,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid2
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid2_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid2_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -1496,11 +1496,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_MID2_L2M2"
+	key = "RS_HEAVY_DREADNOUGHT_MID2_L4G4"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid2
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid2_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid2_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -1527,25 +1527,25 @@ ship_section_template = {
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_02"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_02"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_03"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_03"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_04"
 	}
 	
@@ -1561,11 +1561,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_MID2_L3"
+	key = "RS_HEAVY_DREADNOUGHT_MID2_L6"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid2
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid2_L3_entity"
+	entity = "rs_heavy_dreadnought_mid2_L6_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	ai_weight = {
@@ -1819,7 +1819,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid3
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid3_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid3_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -1982,7 +1982,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid3
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid3_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid3_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -2141,11 +2141,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_MID3_L2M2"
+	key = "RS_HEAVY_DREADNOUGHT_MID3_L4G4"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid3
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid3_L2M2_entity"
+	entity = "rs_heavy_dreadnought_mid3_L4M4_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	component_slot = {
@@ -2172,25 +2172,25 @@ ship_section_template = {
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_02"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_02"
 	}
 		
 	component_slot = {
 		name = "MEDIUM_GUN_03"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_03"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_04"
 	}
 	
@@ -2206,11 +2206,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_MID3_L3"
+	key = "RS_HEAVY_DREADNOUGHT_MID3_L6"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid3
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid3_L3_entity"
+	entity = "rs_heavy_dreadnought_mid3_L6_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	ai_weight = {
@@ -2275,7 +2275,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = mid3
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_mid3_L3_entity"
+	entity = "rs_heavy_dreadnought_mid3_L6_entity"
 	icon = "GFX_ship_part_core_mid"
 
 	ai_weight = {
@@ -2448,11 +2448,11 @@ ship_section_template = {
 #############
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_STERN_L1"
+	key = "RS_HEAVY_DREADNOUGHT_STERN_L2"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_stern_L1_entity"
+	entity = "rs_heavy_dreadnought_stern_L2_entity"
 	icon = "GFX_ship_part_core_stern"
 
 	ai_weight = {
@@ -2492,11 +2492,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_HEAVY_DREADNOUGHT_STERN_M2"
+	key = "RS_HEAVY_DREADNOUGHT_STERN_G4"
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_stern_M2_entity"
+	entity = "rs_heavy_dreadnought_stern_M4_entity"
 	icon = "GFX_ship_part_core_stern"
 	
 	# component_slot = {
@@ -2513,25 +2513,25 @@ ship_section_template = {
 	
 	component_slot = {
 		name = "MEDIUM_GUN_03"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_03"		
 	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_04"
 	}
 	
 	component_slot = {
 		name = "MEDIUM_GUN_05"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_05"	
 	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_06"
-		template = "medium_turret"
+		template = "medium_missile_turret"
 		locatorname = "medium_gun_06"
 	}
 	
@@ -2691,7 +2691,7 @@ ship_section_template = {
 	ship_size = rs_heavy_dreadnought
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "rs_heavy_dreadnought_stern_L1_entity"
+	entity = "rs_heavy_dreadnought_stern_L2_entity"
 	icon = "GFX_ship_part_core_stern"
 
 	component_slot = {

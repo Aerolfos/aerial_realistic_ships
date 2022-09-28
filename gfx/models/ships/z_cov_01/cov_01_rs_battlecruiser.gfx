@@ -1,0 +1,94 @@
+objectTypes = {
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_frame_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_frame.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "DDS_DDSShape"
+			index = 0
+			texture_diffuse = "cov_01_DDS_diffuse.dds"
+			texture_normal = "cov_01_DDS_normal.dds"
+			texture_specular = "cov_01_DDS_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_bow_L1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_bow.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_bow_M1S2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_bow.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_bow_M2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_bow.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid_M3_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid1.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid_M2S2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid1.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid_L1M1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid1.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid_S2HB_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid1.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid2_M3_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid2.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid2_M2S2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid2.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid2_L1M1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid2.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_mid2_S2HB_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_mid2.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_stern_M1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_stern.mesh"
+		scale = 0.8
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_battlecruiser_stern_S2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_battlecruiser_stern.mesh"
+		scale = 0.8
+	}
+}

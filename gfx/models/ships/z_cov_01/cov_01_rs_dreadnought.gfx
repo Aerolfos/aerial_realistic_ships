@@ -1,0 +1,92 @@
+objectTypes = {
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_frame_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_frame.mesh"
+		scale = 0.09
+
+		meshsettings = {
+			name = "Regret3|cov_01_battleship_frame"
+			index = 0
+			texture_diffuse = "cov_01_regret_diffuse.dds"
+			texture_normal = "cov_01_regret_normal.dds"
+			texture_specular = "cov_01_regret_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	#bow	
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_bow_XL1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_bow.mesh"
+		scale = 0.09
+	}
+
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_bow.mesh"
+		scale = 0.09
+	}
+
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_bow_L2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_bow.mesh"
+		scale = 0.09
+	}
+
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_bow.mesh"
+		scale = 0.09
+	}	
+	
+	#mid1	
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_mid1_L2M2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_mid1.mesh"
+		scale = 0.09
+	}
+
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_mid1_L3_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_mid1.mesh"
+		scale = 0.09
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_mid1_S4LHB_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_mid1.mesh"
+		scale = 0.09
+	}
+	
+	#mid2	
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_mid2_L2M2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_mid2.mesh"
+		scale = 0.09
+	}
+
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_mid2_L3_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_mid2.mesh"
+		scale = 0.09
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_mid2_S4LHB_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_mid2.mesh"
+		scale = 0.09
+	}
+	
+	#stern
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_stern_L1_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_stern.mesh"
+		scale = 0.09
+	}
+
+	pdxmesh = {
+		name = "cov_01_rs_dreadnought_stern_M2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_dreadnought_stern.mesh"
+		scale = 0.09
+	}
+}

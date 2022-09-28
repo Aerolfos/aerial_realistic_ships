@@ -1,0 +1,34 @@
+objectTypes = {
+	pdxmesh = {
+		name = "cov_01_rs_support_cruiser_frame_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_support_cruiser_frame.mesh"
+		scale = 1.4
+
+		meshsettings = {
+			name = "DRPShape"
+			index = 0
+			texture_diffuse = "cov_01_DRP_diffuse.dds"
+			texture_normal = "cov_01_DRP_normal.dds"
+			texture_specular = "cov_01_DRP_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "cov_01_rs_support_cruiser_bow_A1S2_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_support_cruiser_bow.mesh"
+		scale = 1.4
+         }
+		 
+	pdxmesh = {
+		name = "cov_01_rs_support_cruiser_mid_S2RDB_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_support_cruiser_mid.mesh"
+		scale = 1.4
+	}
+	
+	pdxmesh = {
+		name = "cov_01_rs_support_cruiser_stern_mesh"
+		file = "gfx/models/ships/cov_01/cov_01_rs_support_cruiser_stern.mesh"
+		scale = 1.4
+	}
+}

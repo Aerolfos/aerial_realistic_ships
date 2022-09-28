@@ -6,7 +6,7 @@ particle={
 	name="ship_aura_negative_effect"
 	subsystem={
 		name="flare"
-		max_amount=5
+		max_amount=20
 		slave_particles=0
 		sort="depth"
 		emitter_type="point"
@@ -23,9 +23,9 @@ particle={
 		}
 		color={
 			x=255.000
-			y=50.000
-			z=25.000
-			alpha=12.000
+			y=100.000
+			z=50.000
+			alpha=50.000,flash_fade
 		}
 		position={
 			x=0.000
@@ -36,15 +36,15 @@ particle={
 		emitter_yaw={ 0.000 0.000 }
 		emitter_pitch={ 0.000 0.000 }
 		life=3.000
-		emission=3.000
-		size=5.000
+		emission=10.000
+		size=8.000
 		particle_pitch=90.000
 		rotation=0.000
 		rotation_speed=50.000
 	}
 	subsystem={
 		name="icon"
-		max_amount=10
+		max_amount=1
 		slave_particles=0
 		sort="depth"
 		emitter_type="point"
@@ -54,16 +54,16 @@ particle={
 		billboard=no
 		hide=no
 		texture={
-			file="gfx/particles/halo_thin.dds"
+			file="gfx/particles/debuff_halo.dds"
 			x=1
 			y=1
 			shader="ParticleAdditive"
 		}
 		color={
 			x=255.000
-			y=50.000
-			z=25.000
-			alpha=24.000,flash_fade
+			y=100.000
+			z=50.000
+			alpha=200.000
 		}
 		position={
 			x=0.000
@@ -77,11 +77,12 @@ particle={
 		velocity_pitch=90.000
 		velocity_yaw=0.000
 		velocity=0.000
-		life=3.000
-		emission=5.000
-		size=10.000
+		life=7.200
+		emission=10.000
+		size=12.000,pulse
 		particle_pitch=90.000
-		rotation={ 0.000 0.000 }
+		rotation=0.000
+		rotation_speed=-50.000
 	}
 	animation={
 		name="flash_fade"
@@ -108,5 +109,19 @@ particle={
 		}
 		op="MUL"
 		time="life"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0.000 0.000 0.000 
+		}
+		direction={
+			0.000 1.000 0.000 
+		}
+		local_force=yes
+		yaw=0.000
+		division=16
+		amount=5.000
 	}
 }

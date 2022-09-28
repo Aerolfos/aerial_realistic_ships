@@ -1,0 +1,80 @@
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_frame_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" 
+	
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_01" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_02" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_03" } }
+	
+	}
+	state = { name = "death" 
+		event = { time = 12.5 particle = "dreadnought_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "amb_titan_ship_death" } }
+	}
+	game_data = {
+		size = 40
+	}
+}
+
+#bow
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_bow_L1M1S2_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_bow_mesh"
+	}
+	
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_bow_L2_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_bow_mesh"
+	}
+	
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_bow_M1S2SHB_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_bow_mesh"
+	}
+	
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_bow_XL1_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_bow_mesh"
+	}
+
+#mid1
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_mid1_L2M2_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_mid1_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_mid1_L3_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_mid1_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_mid1_S4LHB_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_mid1_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_mid1_M4SHB_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_mid1_mesh"
+}
+
+#other
+
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_mid2_L6_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_mid2_mesh"
+}
+
+entity = {
+	name = "cov_01_rs_heavy_dreadnought_type_b_stern_M4L2_entity"
+	pdxmesh = "cov_01_rs_heavy_dreadnought_type_b_stern_mesh"
+	
+	state = { name = "moving" state_time = 5	
+		event =  { trigger_once = yes sound = { soundeffect = "moving_out_titan" } }
+		event = { time = 0 node = "exhaust_middle" particle = "cov_infinity_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left" particle = "cov_epoch_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_right" particle = "cov_epoch_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+}

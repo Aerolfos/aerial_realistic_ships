@@ -14,6 +14,7 @@ tech_rs_THIS_TECH_SHOULD_BE_IMPOSSIBLE_TO_GET = {
 	}
 
 	weight_modifier = {
+		base = 0
 		modifier = {
 			factor = 0
 			always = yes
@@ -21,6 +22,7 @@ tech_rs_THIS_TECH_SHOULD_BE_IMPOSSIBLE_TO_GET = {
 	}
 
 	ai_weight = {
+		base = 0
 		modifier = {
 			factor = 0
 			always = yes

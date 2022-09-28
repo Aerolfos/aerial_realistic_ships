@@ -2,7 +2,7 @@
 
 @section_cost = 80
 
-# updated for 3.4 2022/06/01
+# updated for 3.5 2022/09/27
 
 #BOW
 

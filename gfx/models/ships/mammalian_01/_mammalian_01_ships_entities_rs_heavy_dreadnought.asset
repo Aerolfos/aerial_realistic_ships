@@ -4,6 +4,13 @@
 
 @battleship_scale = 16.0
 
+@small_trail_W = 10
+@small_trail_L = 60
+@medium_trail_W = 25
+@medium_trail_L = 150
+@large_trail_W = 50
+@large_trail_L =  300
+
 #############
 ### FRAME ###
 #############
@@ -137,7 +144,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_bow_L2_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_bow_L4_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 	
 	locator = { name = "part16"	position = { 9.8 -3.0 -9 } rotation = { 0 0 -120 } }
@@ -172,7 +179,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_bow_XL1_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_bow_XL2_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 	
 	locator = { name = "part16"	position = { 9.8 -3.0 -9 } rotation = { 0 0 -120 } }
@@ -260,7 +267,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid1_L2M2_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid1_L4M4_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 	
 	locator = { name = "part14"	position = { 9.8 -3.0 -9 } rotation = { 0 0 -120 } }
@@ -304,7 +311,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid1_L3_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid1_L6_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 	
 	locator = { name = "part14"	position = { 9.8 -3.0 -9 } rotation = { 0 0 -120 } }
@@ -346,7 +353,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid1_M4SHB_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid1_M8H2_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 	
 	locator = { name = "part14"	position = { 9.8 -3.0 -9 } rotation = { 0 0 -120 } }
@@ -454,7 +461,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid2_L2M2_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid2_L4M4_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 	
 	locator = { name = "part12"	position = { 9.8 -3.0 -8 } rotation = { 0 0 -120 } }
@@ -498,7 +505,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid2_L3_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid2_L6_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 
 	
@@ -541,7 +548,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid2_M4SHB_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid2_M8H1_entity"
 	pdxmesh = "mammalian_01_battleship_frame_mesh"
 	
 	locator = { name = "part12"	position = { 9.8 -3.0 -8 } rotation = { 0 0 -120 } }
@@ -645,7 +652,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid3_L2M2_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid3_L4M4_entity"
 	pdxmesh = "mammalian_01_battleship_bow_XL1_mesh"
 	
 	locator = { name = "part10"	position = { 9.8 -3.0 -9 } rotation = { 0 0 -120 } }
@@ -690,7 +697,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid3_L3_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid3_L6_entity"
 	pdxmesh = "mammalian_01_battleship_bow_XL1_mesh"
 	
 	
@@ -741,12 +748,6 @@ entity = {
 	
 	locator = { name = "part10"	position = { 9.8 -3.0 -9 } rotation = { 0 0 -120 } }
 	locator = { name = "part11"	position = { -9.8 -3.0 -9 } rotation = { 0 0 120 } }
-	locator = { name = "large_gun_01"	position = { 11.3 -6.5 -7.1 } rotation = { 0 0 -120 } }
-	locator = { name = "large_gun_02"	position = { 13.6 -2.7 -7.1 } rotation = { 0 0 -120 } }
-	locator = { name = "large_gun_03"	position = { 12.5 -4.5 -12.1 } rotation = { 0 0 -120 } }
-	locator = { name = "large_gun_04"	position = { -11.3 -6.5 -7.1 } rotation = { 0 0 120 } }
-	locator = { name = "large_gun_05"	position = { -13.6 -2.7 -7.1 } rotation = { 0 0 120 } }
-	locator = { name = "large_gun_06"	position = { -12.5 -4.5 -12.1 } rotation = { 0 0 120 } }
 	attach = { part10 = "mammalian_01_battleship_mid_L3_entity"}
 	attach = { part11 = "mammalian_01_battleship_mid_L3_entity"}
 
@@ -780,7 +781,7 @@ entity = {
 }
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_mid3_M4SHB_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_mid3_M8H2_entity"
 	pdxmesh = "mammalian_01_battleship_bow_XL1_mesh"
 	
 	
@@ -835,7 +836,7 @@ entity = {
 #############
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_stern_L1_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_stern_L2_entity"
 	pdxmesh = "mammalian_01_battleship_stern_L1_mesh"
 	
 	locator = { name = "part6"	position = { 9.8 -3.0 2.0 } rotation = { 0 0 -120 } }
@@ -892,7 +893,7 @@ entity = {
 
 
 entity = {
-	name = "mammalian_01_rs_heavy_dreadnought_stern_M2_entity"
+	name = "mammalian_01_rs_heavy_dreadnought_stern_M4_entity"
 	pdxmesh = "mammalian_01_battleship_stern_M2_mesh"
 
 	locator = { name = "part6"	position = { 9.8 -3.0 2.0 } rotation = { 0 0 -120 } }

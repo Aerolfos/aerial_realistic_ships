@@ -1,0 +1,131 @@
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_entity"
+	pdxmesh = "unsc_01_Flagship_frame_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" 
+	
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_01" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_02" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_03" } }
+	
+	}
+	state = { name = "death" 
+		event = { time = 12.5 particle = "dreadnought_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "amb_titan_ship_death" } }
+	}
+	
+	game_data = {
+		size = 40
+	}
+}
+
+#bow
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_bow_L1M1S2_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_bow_L2_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_bow_XL1_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+#mid1
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid1_M4SHB_entity"
+	pdxmesh = "empty_mesh"
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid1_L3_entity"
+	pdxmesh = "empty_mesh"
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid1_L2M2_entity"
+	pdxmesh = "empty_mesh"
+	scale = 0
+}
+
+
+#mid2
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid2_L2M2_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid2_L3_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid2_M4SHB_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+#mid3
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid3_L2M2_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid3_L3_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_mid3_M4SHB_entity"
+	pdxmesh = "empty_mesh"
+	
+	scale = 0
+}
+
+#stern
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_stern_L1_entity"
+	pdxmesh = "empty_mesh"
+	
+	state = { name = "moving" state_time = 5	
+		event =  { trigger_once = yes sound = { soundeffect = "moving_out_titan" } }
+		event = { time = 0 node = "exhaust_middle" particle = "unsc_infinity_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left" particle = "unsc_epoch_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_right" particle = "unsc_epoch_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "unsc_01_rs_heavy_dreadnought_stern_M2_entity"
+	pdxmesh = "empty_mesh"
+	
+	state = { name = "moving" state_time = 5	
+		event =  { trigger_once = yes sound = { soundeffect = "moving_out_titan" } }
+		event = { time = 0 node = "exhaust_middle" particle = "unsc_infinity_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_left" particle = "unsc_epoch_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "exhaust_right" particle = "unsc_epoch_main_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+	}
+}

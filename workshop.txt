@@ -1,4 +1,4 @@
-[h3]Updated for 3.4.[/h3]
+[h3]Updated for 3.5.[/h3]
 
 [h3]Not achievement compatible.[/h3]
 
@@ -36,6 +36,26 @@ Not sure what to do about Heavy Dreadnoughts, so they also have PD and S slots s
 [u]This mod should be compatible with most stuff by avoiding most overwrites. Non-vanilla shipsets will get fallback mammalian models though, for obvious reasons.[/u]
 
 Note that for the moment some sections are missing kitbashes and proper turret placements. Also no aquatics support, I don't own aquatics.
+
+[u]Currently Supported Shipsets:[/u]
+[list]
+    [*] Arthropoid
+    [*] Avian
+    [*] Fungoid
+    [*] Humanoid
+    [*] Lithoid
+    [*] Mammalian
+    [*] Molluscoid
+    [*] Necroid
+    [*] Nemesis (Imperial)
+    [*] Plantoid
+    [*] Reptilian
+    [*] Toxoid
+    [*] - Modded Shipsets -
+    [*] Machine Shipset
+    [*] Sins of the Prophets (UNSC and Covenant)
+    [*] United Fleet Shipset
+[/list]
 
 [h3]Credits[/h3]
 Based on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=725596168]the original Realistic Ships mod[/url] by Tal Ara'nh.
