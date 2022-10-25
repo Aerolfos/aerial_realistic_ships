@@ -97,6 +97,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ship_part_aura_shield_hardener"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_aura_shield_hardener.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ship_part_aura_tracking_jammer"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_aura_tracking_jammer.dds"
 	}

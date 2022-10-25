@@ -29,6 +29,8 @@ rs_support_cruiser = {
 	prerequisites = { "tech_rs_auxiliary_cruisers" }
 	
 	default_behavior = line
+	ship_roles = { screen gunship artillery }
+
 	combat_disengage_chance = @support_cruiser_disengage_chance
 	
 	class = shipclass_military
@@ -90,6 +92,8 @@ rs_ea_cruiser = {
 	prerequisites = { "tech_rs_auxiliary_cruisers" }
 	
 	default_behavior = line
+	ship_roles = { screen artillery explosive energy_torpedoes }
+
 	combat_disengage_chance = @ea_cruiser_disengage_chance
 	
 	class = shipclass_military
@@ -151,6 +155,8 @@ rs_battlecruiser = {
 	prerequisites = { "tech_rs_battlecruisers" }
 
 	default_behavior = artillery
+	ship_roles = { screen gunship brawler artillery explosive energy_torpedoes }
+
 	combat_disengage_chance = @battlecruiser_disengage_chance
 
 	class = shipclass_military
@@ -213,6 +219,8 @@ rs_carrier = {
 	prerequisites = { "tech_rs_carriers" }
 
 	default_behavior = carrier
+	ship_roles = { screen carrier }
+
 	combat_disengage_chance = @carrier_disengage_chance
 
 	class = shipclass_military
@@ -281,6 +289,8 @@ rs_dreadnought = {
 	prerequisites = { "tech_rs_dreadnoughts" }
 	
 	default_behavior = artillery
+	ship_roles = { artillery gunship }
+
 	combat_disengage_chance = @dreadnought_disengage_chance
 	
 	class = shipclass_military
@@ -350,6 +360,8 @@ rs_heavy_dreadnought = {
 	prerequisites = { "tech_rs_heavy_dreadnoughts" }
 	
 	default_behavior = artillery
+	ship_roles = { screen artillery brawler }
+
 	combat_disengage_chance = @heavy_dreadnought_disengage_chance
 	
 	class = shipclass_military
@@ -372,7 +384,14 @@ rs_heavy_dreadnought = {
 		custom_tooltip = {
 			fail_text = starbase_citadel_trigger
 			OR = {
+				# megashipyard bypass
 				is_scope_type = megastructure
+				# juggernaut type bypass
+				# AND = {
+				# 	is_ship_class = shipclass_starbase
+				# 	fleet = { is_mobile = yes }
+				# }
+				# starbase must be citadel (no building)
 				AND = {
 					is_scope_type = starbase
 					has_starbase_size >= starbase_citadel

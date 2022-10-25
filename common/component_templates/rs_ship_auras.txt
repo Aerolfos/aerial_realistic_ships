@@ -9,7 +9,7 @@
 # used for buffs, works only for a fleet close together
 @shipAuraRangeShort = 60
 # debuffs need to hit enemies early on
-@shipAuraRangeLong = 100
+@shipAuraRangeLong = 110
 # the jamming stuff is system wide because otherwise neutron launchers laugh at the aura
 
 ######################
@@ -37,8 +37,8 @@ utility_component_template = {
 		}
 		
 		modifier = {
-			ship_hull_regen_add_static = 0.5
-			ship_armor_regen_add_static = 1.5
+			ship_hull_regen_add_perc = 0.005
+			ship_armor_regen_add_perc = 0.01
 		}
 		
 		graphics = {
@@ -79,7 +79,49 @@ utility_component_template = {
 		}
 		
 		modifier = {
-			ship_shield_regen_add_perc = 0.1
+			ship_shield_regen_add_perc = 0.01
+			ship_shield_mult = 0.05
+		} 
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_positive_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 20
+	}
+}
+
+utility_component_template = {
+	key = "RS_SHIP_AURA_SHIELD_HARDENER"
+	size = medium
+	icon = "GFX_ship_part_aura_shield_hardener"
+	icon_frame = 1
+	power = -205
+	
+	size_restriction = { rs_support_cruiser }
+	component_set = "ship_aura_components"
+	
+	friendly_aura = {
+		name = "aura_shield_hardener"
+		radius = @shipAuraRangeShort
+		apply_on = ships
+		
+		stack_info = {
+			id = rs_friendly_support_aura_shield_hardener
+			priority = 1
+		}
+		
+		modifier = {
+			ship_shield_hardening_add = 0.15
 		} 
 		
 		graphics = {
@@ -204,10 +246,10 @@ utility_component_template = {
 		}
 		
 		modifier = {
-			ship_disengage_chance_mult = 0.10
+			ship_disengage_opportunities_add = 1
 			ship_emergency_ftl_min_days_mult = -0.25
 			ship_emergency_ftl_mult = -0.10
-		} 
+		}
 		
 		graphics = {
 			area_effect = {
@@ -252,6 +294,7 @@ utility_component_template = {
 		
 		modifier = {
 			ship_shield_mult = -0.10
+			ship_shield_hardening_add = -0.05
 		}
 		
 		graphics = {
@@ -293,6 +336,7 @@ utility_component_template = {
 		
 		modifier = {
 			ship_fire_rate_mult = -0.05
+			ship_speed_reduction = 0.1
 		}
 		
 		graphics = {

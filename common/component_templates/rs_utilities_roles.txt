@@ -40,6 +40,9 @@ utility_component_template = {
 	size_restriction = { rs_support_cruiser rs_ea_cruiser }	
 	component_set = "combat_computers"
 	upgrades_to = "RS_COMBAT_COMPUTER_LINE_BASIC"
+
+	ai_tags = { gunship }
+	ai_tag_weight = 0
 	
 	ai_weight = {
 		weight = 1
@@ -65,6 +68,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	upgrades_to = "RS_COMBAT_COMPUTER_ARTILLERY_BASIC"
 
+	ai_tags = { artillery energy_torpedoes }
+	ai_tag_weight = 0
+
 	ai_weight = {
 		weight = 1
 	}
@@ -89,8 +95,201 @@ utility_component_template = {
 	component_set = "combat_computers"
 	upgrades_to = "RS_COMBAT_COMPUTER_CARRIER_BASIC"
 
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
 	ai_weight = {
 		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "RS_COMBAT_COMPUTER_TORPEDO_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "torpedo"
+
+	class_restriction = { shipclass_military }
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	component_set = "combat_computers"
+	upgrades_to = "RS_COMBAT_COMPUTER_TORPEDO_BASIC"
+	ai_tags = { explosive }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+###########################
+### 'TORPEDO' COMPUTERS ###
+###########################
+
+utility_component_template = {
+	key = "RS_COMBAT_COMPUTER_TORPEDO_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_basic"
+	icon_frame = 1
+	power = @power1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+
+	class_restriction = { shipclass_military }
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "torpedo"
+	prerequisites = { "tech_combat_computers_1" "tech_torpedoes_1" }
+	upgrades_to = "COMBAT_COMPUTER_SWARM_ADVANCED"
+	ai_tags = { explosive }
+	ai_tag_weight = 0
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "RS_COMBAT_COMPUTER_TORPEDO_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_advanced"
+	icon_frame = 1
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "torpedo"
+	prerequisites = { "tech_combat_computers_2" "tech_torpedoes_1" }
+	upgrades_to = "COMBAT_COMPUTER_SWARM_SAPIENT"
+	ai_tags = { explosive }
+	ai_tag_weight = 0
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "RS_COMBAT_COMPUTER_TORPEDO_SAPIENT"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "torpedo"
+	prerequisites = { "tech_combat_computers_3" "tech_torpedoes_1" }
+	ai_tags = { explosive }
+	ai_tag_weight = 0
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			OR = {
+				has_global_flag = ghost_signal_5_flag
+				has_global_flag = ghost_signal_4_flag
+				has_global_flag = ghost_signal_3_flag
+				has_global_flag = ghost_signal_2_flag
+				has_global_flag = ghost_signal_1_flag
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "RS_COMBAT_COMPUTER_TORPEDO_AUTONOMOUS"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "torpedo"
+	prerequisites = { "tech_combat_computers_autonomous" "tech_torpedoes_1" }
+	ai_tags = { explosive }
+	ai_tag_weight = 0
+
+	modifier = {
+		ship_evasion_mult = 0.10
+		weapon_type_explosive_weapon_damage_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "RS_COMBAT_COMPUTER_TORPEDO_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_swarm_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	component_set = "combat_computers"
+	ship_behavior = "torpedo"
+	prerequisites = { "tech_precognition_interface" "tech_torpedoes_1" }
+	ai_tags = { explosive }
+	ai_tag_weight = 0
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.15
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 4
 	}
 }
 
@@ -116,6 +315,9 @@ utility_component_template = {
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "RS_COMBAT_COMPUTER_PICKET_ADVANCED"
+
+	ai_tags = { screen }
+	ai_tag_weight = 0
 	
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -145,6 +347,9 @@ utility_component_template = {
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "RS_COMBAT_COMPUTER_PICKET_SAPIENT"
+
+	ai_tags = { screen }
+	ai_tag_weight = 0
 	
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
@@ -173,6 +378,8 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_3" }
+	ai_tags = { screen }
+	ai_tag_weight = 0
 	
 	modifier = {
 		ship_evasion_mult = 0.10
@@ -214,6 +421,8 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_autonomous" }
+	ai_tags = { screen }
+	ai_tag_weight = 0
 	
 	modifier = {
 		ship_evasion_mult = 0.10
@@ -245,6 +454,8 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_precognition_interface" }
+	ai_tags = { screen }
+	ai_tag_weight = 0
 	
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -278,6 +489,9 @@ utility_component_template = {
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "RS_COMBAT_COMPUTER_LINE_ADVANCED"
+
+	ai_tags = { gunship }
+	ai_tag_weight = 0
 	
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -308,6 +522,9 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "RS_COMBAT_COMPUTER_LINE_SAPIENT"
 
+	ai_tags = { gunship }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
 		ship_accuracy_add = 10
@@ -335,6 +552,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_3" }
+
+	ai_tags = { gunship }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -374,6 +594,9 @@ utility_component_template = {
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_autonomous" }
 
+	ai_tags = { gunship }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
 		ship_accuracy_add = 20
@@ -401,6 +624,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_precognition_interface" }
+
+	ai_tags = { gunship }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
@@ -435,6 +661,9 @@ utility_component_template = {
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "RS_COMBAT_COMPUTER_ARTILLERY_ADVANCED"
+
+	ai_tags = { artillery energy_torpedoes }
+	ai_tag_weight = 0
 	
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -465,6 +694,9 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "RS_COMBAT_COMPUTER_ARTILLERY_SAPIENT"
 
+	ai_tags = { artillery energy_torpedoes }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
 		ship_weapon_range_mult = 0.10
@@ -492,6 +724,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_3" }
+
+	ai_tags = { artillery energy_torpedoes }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -531,6 +766,9 @@ utility_component_template = {
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_autonomous" }
 
+	ai_tags = { artillery energy_torpedoes }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
 		ship_weapon_range_mult = 0.20
@@ -558,6 +796,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_precognition_interface" }
+
+	ai_tags = { artillery energy_torpedoes }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
@@ -591,6 +832,9 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "RS_COMBAT_COMPUTER_CARRIER_ADVANCED"
 
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_engagement_range_mult = 0.25
 	}
@@ -619,6 +863,9 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "RS_COMBAT_COMPUTER_CARRIER_SAPIENT"
 
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_engagement_range_mult = 0.50
 	}
@@ -645,6 +892,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_3" }
+
+	ai_tags = { carrier }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_engagement_range_mult = 1.0
@@ -684,6 +934,9 @@ utility_component_template = {
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_autonomous" }
 
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_engagement_range_mult = 1.0
 	}
@@ -710,6 +963,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_precognition_interface" }
+
+	ai_tags = { carrier }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_engagement_range_mult = 0.75
@@ -743,6 +999,9 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "RS_COMBAT_COMPUTER_ADV_CARRIER_ADVANCED"
 
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_engagement_range_mult = 0.25
 	}
@@ -771,6 +1030,9 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "RS_COMBAT_COMPUTER_ADV_CARRIER_SAPIENT"
 
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_engagement_range_mult = 0.50
 	}
@@ -797,6 +1059,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "adv_carrier"
 	prerequisites = { "tech_combat_computers_3" }
+
+	ai_tags = { carrier }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_engagement_range_mult = 1.0
@@ -836,6 +1101,9 @@ utility_component_template = {
 	ship_behavior = "adv_carrier"
 	prerequisites = { "tech_combat_computers_autonomous" }
 
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
 	ship_modifier = {
 		ship_engagement_range_mult = 1.0
 	}
@@ -862,6 +1130,9 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "adv_carrier"
 	prerequisites = { "tech_precognition_interface" }
+
+	ai_tags = { carrier }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_engagement_range_mult = 0.75

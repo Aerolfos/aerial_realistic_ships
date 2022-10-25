@@ -16,6 +16,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_ea_cruiser_bow_A1S2_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen artillery explosive energy_torpedoes }
 	
 	component_slot = {
 		name = "PD_01"
@@ -59,6 +60,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_ea_cruiser_mid_A2S2_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { screen artillery explosive energy_torpedoes }
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -102,6 +104,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_ea_cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { explosive energy_torpedoes }
 
 	component_slot = {
 		name = "TORPEDO_01"
@@ -128,6 +131,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_ea_cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery }
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -154,6 +158,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_ea_cruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery }
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -187,6 +192,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_ea_cruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen }
 
 	component_slot = {
 		name = "SMALL_GUN_01"

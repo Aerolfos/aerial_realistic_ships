@@ -16,6 +16,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
 
 	ai_weight = {
 		factor = 1.5
@@ -46,6 +47,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
 
 	ai_weight = {
 		factor = 2
@@ -75,6 +77,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { explosive energy_torpedoes }
 	
 	ai_weight = {
 		modifier = {
@@ -124,6 +127,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen }
 	
 	ai_weight = {
 		modifier = {
@@ -175,6 +179,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { brawler }
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -219,6 +224,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_bow_M2_entity"
 	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship }
 	
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -304,6 +310,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid1_L1M1_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
 	
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -334,6 +341,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid1_M3_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship }
 	
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -374,6 +382,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid1_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { explosive energy_torpedoes }
 	
 	ai_weight = {
 		modifier = {
@@ -430,6 +439,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid1_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { brawler }
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -489,6 +499,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid1_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { screen }
 
 	ai_weight = {
 		modifier = {
@@ -611,6 +622,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid2_L1M1_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { artillery }
 	
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -643,6 +655,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid2_M3_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship }
 	
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -683,6 +696,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid2_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { explosive energy_torpedoes }
 	
 	ai_weight = {
 		modifier = {
@@ -739,6 +753,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid2_S2HB_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { brawler }
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -798,6 +813,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_mid2_S2HB_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = { screen }
 
 	ai_weight = {
 		modifier = {
@@ -868,6 +884,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship }
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -894,6 +911,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { explosive energy_torpedoes }
 
 	component_slot = {
 		name = "MISSILE_01"
@@ -931,6 +949,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { brawler }
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -964,6 +983,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "rs_battlecruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen }
 
 	ai_weight = {
 		modifier = {
@@ -996,3 +1016,4 @@ ship_section_template = {
 		}
 	}
 }
+
