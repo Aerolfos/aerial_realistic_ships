@@ -1,5 +1,5 @@
 
-#######  Heavy Dreadnought Bow Sections  #######
+#######  Heavy Dreadnought Sections  #######
 objectTypes = {
 
 	pdxmesh = {
@@ -553,6 +553,422 @@ objectTypes = {
 			texture_specular = "toxoid_01_colony_ship_specular.dds"
 			shader = "PdxMeshShipDiffuseEmissiveAlpha"
 		}
+	}
+
+	pdxmesh = {
+		name = "toxoid_01_rs_heavy_dreadnought_stern_L1S4_mesh"
+		file = "gfx/models/ships/toxoid_01/toxoid_01_rs_heavy_dreadnought_stern_L1S4.mesh"
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_corvette_S3_diffuse.dds"
+			texture_normal = "toxoid_01_corvette_S3_normal.dds"
+			texture_specular = "toxoid_01_corvette_S3_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_5Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_corvette_S3_diffuse.dds"
+			texture_normal = "toxoid_01_corvette_S3_normal.dds"
+			texture_specular = "toxoid_01_corvette_S3_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_5Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+	}
+
+
+	pdxmesh = {
+		name = "toxoid_01_rs_heavy_dreadnought_stern_L2_mesh"
+		file = "gfx/models/ships/toxoid_01/toxoid_01_rs_heavy_dreadnought_stern_L2.mesh"
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_corvette_S3_diffuse.dds"
+			texture_normal = "toxoid_01_corvette_S3_normal.dds"
+			texture_specular = "toxoid_01_corvette_S3_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_5Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_cruiser_diffuse.dds"
+			texture_normal = "toxoid_01_cruiser_normal.dds"
+			texture_specular = "toxoid_01_cruiser_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_5Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_6Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_cruiser_diffuse.dds"
+			texture_normal = "toxoid_01_cruiser_normal.dds"
+			texture_specular = "toxoid_01_cruiser_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_6Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+	}
+
+	pdxmesh = {
+		name = "toxoid_01_rs_heavy_dreadnought_stern_M4_mesh"
+		file = "gfx/models/ships/toxoid_01/toxoid_01_rs_heavy_dreadnought_stern_M4.mesh"
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_corvette_S3_diffuse.dds"
+			texture_normal = "toxoid_01_corvette_S3_normal.dds"
+			texture_specular = "toxoid_01_corvette_S3_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_5Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_cruiser_diffuse.dds"
+			texture_normal = "toxoid_01_cruiser_normal.dds"
+			texture_specular = "toxoid_01_cruiser_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_5Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_6Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_cruiser_diffuse.dds"
+			texture_normal = "toxoid_01_cruiser_normal.dds"
+			texture_specular = "toxoid_01_cruiser_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "_toxoid_01_cruiser_mid_L1_M1_g_body_6Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+	}
+
+	pdxmesh = {
+		name = "toxoid_01_rs_heavy_dreadnought_stern_S8_mesh"
+		file = "gfx/models/ships/toxoid_01/toxoid_01_rs_heavy_dreadnought_stern_S8.mesh"
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_L1_1Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_2Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_battleship_02_diffuse.dds"
+			texture_normal = "toxoid_01_battleship_02_normal.dds"
+			texture_specular = "toxoid_01_battleship_02_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name="toxoid_01_battleship_stern_M2_3Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_corvette_S3_diffuse.dds"
+			texture_normal = "toxoid_01_corvette_S3_normal.dds"
+			texture_specular = "toxoid_01_corvette_S3_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_4Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_5Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_corvette_S3_diffuse.dds"
+			texture_normal = "toxoid_01_corvette_S3_normal.dds"
+			texture_specular = "toxoid_01_corvette_S3_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "g_toxic_01_corvette_s3_5Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
+		meshsettings = {
+			name = "g_toxoid_01_corvette_m1s1_6Shape"
+			index = 0
+			texture_diffuse = "toxoid_01_corvette_M1_S1_diffuse.dds"
+			texture_normal = "toxoid_01_corvette_M1_S1_normal.dds"
+			texture_specular = "toxoid_01_corvette_M1_S1_specular.dds"
+			shader = "PdxMeshShip"
+		}
+		meshsettings = {
+			name = "g_toxoid_01_corvette_m1s1_6Shape"
+			index = 1
+			texture_diffuse = "toxoid_01_gas_diffuse.dds"
+			texture_normal = "toxoid_01_gas_flowmap.dds"
+			texture_specular = "toxoid_01_gas_specular.dds"
+			shader = "PdxMeshShipFlow"
+		}
+
 	}
 
 }
