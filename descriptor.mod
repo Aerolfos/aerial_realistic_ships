@@ -8,5 +8,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Aerial Realistic Ships"
-supported_version="3.5.*"
+supported_version="3.6.*"
 remote_file_id="2815979895"
