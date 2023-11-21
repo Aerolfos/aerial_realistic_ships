@@ -70,7 +70,7 @@
 @battlecruiser_naval_cap = 6
 @battlecruiser_fleet_slot = 4
 
-@battlecruiser_hp = 2000
+@battlecruiser_hp = 2500
 @battlecruiser_evasion = 8
 @battlecruiser_disengage_chance = 1.35
 @battlecruiser_piracy_suppression = 8
@@ -125,7 +125,7 @@
 @dreadnought_accuracy_debuff = -10
 @dreadnought_disengagement_debuff = 0.10
 
-@dreadnought_hp = 6000
+@dreadnought_hp = 5400
 @dreadnought_evasion = 5
 @dreadnought_disengage_chance = 1.10
 @dreadnought_piracy_suppression = 4
@@ -154,7 +154,7 @@
 @heavy_dreadnought_accuracy_debuff = -25
 @heavy_dreadnought_disengagement_debuff = 0.25
 
-@heavy_dreadnought_hp = 9000
+@heavy_dreadnought_hp = 10000
 @heavy_dreadnought_evasion = 0
 @heavy_dreadnought_disengage_chance = 1.00
 @heavy_dreadnought_piracy_suppression = 2
