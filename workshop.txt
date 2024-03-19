@@ -1,7 +1,7 @@
-[h3]Updated for 3.6.[/h3]
+[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png[/img] Supports version: [b]3.6.x[/b][/h3]
+[h3][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png[/img] Not achievement compatible.[/h3]
 
-[h3]Not achievement compatible.[/h3]
-
+[img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_description_1.png[/img]
 Since Realistic Ships was not updated for when I wanted to play with it, I decided to do it myself. In the process, I came across small issues, unnecessary overwrites, and balance issues. So now after way too much effort the mod is now (mostly) properly updated.
 
 This mod features 6 new ship classes:
@@ -25,17 +25,11 @@ These ships double down on the vanilla counters:
 
 In order to help facilitate this, the H slot sections were removed from battleships, so cruisers (refitted to light carriers) and full fleet carriers are the only source of strike craft.
 
-3.6 balance is still being figured out. 
+In return, battleships got new sections, for example missiles are now actually usable on larger ships. PD also appears on larger ships, which helps counter strike craft dominance.
 
-Larger ships have PD sections to help screen fleets. They have some torpedo slots for now, and M slots to fit the new missiles. The dreadnought and battleship remain pretty rigid in their fitting still, and should serve purely as artillery ships.
+Battlecruisers specifically can be kitted out with full PD or S, allowing them to serve both a picket role in capital fleets, and a flagship role in non-capital fleets.
 
-Battlecruisers are the flexible choice, just like cruisers, allowing them to serve both a support role in capital fleets, and a flagship role in non-capital fleets.
-
-Heavy Dreadnoughts are mostly artillery ships, but can also be fitted out as a pure screen vessel, serving as a fleet anchor coated in ungodly amounts of dakka.
-
-Support cruisers provide powerful buff auras for your fleets, like adding one disengagement chance to the fleet or shield-hardening to nearby ships. However, they are vulnerable and lightly armed compared to cruisers.
-
-Electronic Attack Cruisers instead debuff your enemies, like reducing their range and speed or providing negative shield hardening. An enemy support cruiser will cancel out the effect, but otherwise all shots will deal chip damage that bypasses shields.
+Not sure what to do about Heavy Dreadnoughts, so they also have PD and S slots since a giant flagship rushing into a horde of corvettes and tearing them up with autocannon spam is hilarious. PD makes them scary fleet anchors for carriers.
 
 [u]Destroyers and battleships are overwritten to make new sections.[/u]
 
@@ -62,6 +56,9 @@ Graphics stuff is not yet finished, missing sections and ships.
     [*] Sins of the Prophets (UNSC and Covenant)
     [*] United Fleet Shipset
 [/list]
+
+[h3]Links[/h3]
+[url=https://github.com/Aerolfos/aerial_realistic_ships/][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_github_2.png[/img][/url]
 
 [h3]Credits[/h3]
 Based on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=725596168]the original Realistic Ships mod[/url] by Tal Ara'nh.
