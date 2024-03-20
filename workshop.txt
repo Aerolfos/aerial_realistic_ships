@@ -58,6 +58,7 @@ Graphics stuff is not yet finished, missing sections and ships.
 [/list]
 
 [h3]Links[/h3]
+[url=https://github.com/Aerolfos/aerial_realistic_ships/releases/latest][img]https://img.shields.io/github/v/release/aerolfos/aerial_realistic_ships?logo=github&style=flat)[/img][/url] - Download from Github
 [url=https://github.com/Aerolfos/aerial_realistic_ships/][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_github_2.png[/img][/url]
 
 [h3]Credits[/h3]
