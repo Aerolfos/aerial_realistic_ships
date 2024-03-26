@@ -1,13 +1,13 @@
 # Changes for [Aerial Realistic Ships](https://steamcommunity.com/sharedfiles/filedetails/?id=2815979895)
 
 ---
-## Aerial Realistic Ships Version `0.5.2`:
+## [Aerial Realistic Ships Version `0.5.2`](https://github.com/Aerolfos/aerial_realistic_ships/releases/tag/v.0.5.2):
 - Add trigger for compat
 - Backend Github changes only relevant for development
 ---
 
 ---
-## Aerial Realistic Ships Version `0.5.1`:
+## [Aerial Realistic Ships Version `0.5.1`](https://github.com/Aerolfos/aerial_realistic_ships/releases/tag/v.0.5.1):
 - Tweak ship HP to match spreadsheet balance
 - Battlecruiser: 2000 -> 2500
 - Dreadnought: 6000 -> 5400
