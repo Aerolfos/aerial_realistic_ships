@@ -1,0 +1,7 @@
+supported_version_override="3.*.*"
+extra_loc_files_to_update={
+	"aerial_realistic_ships/localisation/english/l_english_rs.yml"
+}
+loc_keys_to_match={
+	"rs_mod_version"
+}

@@ -10,6 +10,7 @@
 
 ![No Achievement Icon](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png) Not achievement compatible.
 
+![Description:](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_description_1.png)
 Customized and updated fork of [Realistic Ships](https://steamcommunity.com/sharedfiles/filedetails/?id=725596168).
 
 ## Installation
