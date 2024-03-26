@@ -1,0 +1,10 @@
+# compat
+# specifically this fork
+ars_realistic_ships_active = {
+	always = yes
+}
+# some version of realistic ships is active
+has_realistic_ships = {
+	always = yes
+}
+
