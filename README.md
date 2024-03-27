@@ -1,4 +1,6 @@
 # [Aerial Realistic Ships](https://steamcommunity.com/sharedfiles/filedetails/?id=2815979895)
+
+[![Stellaris Mod Deploy Action Status](https://github.com/aerolfos/aerial_realistic_ships/actions/workflows/deployStellarisMod.yml/badge.svg)](https://github.com/aerolfos/aerial_realistic_ships/actions/workflows/deployStellarisMod.yml)
 [![GitHub Release Badge](https://img.shields.io/github/v/release/aerolfos/aerial_realistic_ships?logo=github&style=flat)](https://github.com/Aerolfos/aerial_realistic_ships/releases/latest)
 [![Repository License](https://img.shields.io/github/license/aerolfos/aerial_realistic_ships?style=flat&color=brightgreen)](LICENSE)
 <!---[![Discord](https://img.shields.io/discord/739835273969664050?style=flat&label=Discord&logo=discord&logoColor=white&color=7289DA)](https://discord.com/invite/xUrG9wh)--->
@@ -17,7 +19,7 @@ Customized and updated fork of [Realistic Ships](https://steamcommunity.com/shar
 ## Installation
 Steam owners can subscribe to the [Steam Workshop version of the mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2815979895).
 
-WIP for manual installation instructions
+You can find manual installation instructions [here](https://github.com/Aerolfos/stellaris_mod_deploy_action/wiki/Mod-Installation).
 
 ## Credits
 Realistic Ships was originally created by Tal Ara'nh. Many thanks for the great mod.
