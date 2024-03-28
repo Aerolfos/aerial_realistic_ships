@@ -2,6 +2,6 @@ supported_version_override="3.*.*"
 extra_loc_files_to_update={
 	"aerial_realistic_ships/localisation/english/l_english_rs.yml"
 }
-loc_keys_to_match={
-	"rs_mod_version"
-}
+version_loc_key="rs_mod_version"
+# test with two sets of versions in readme to update
+readme_version_pattern = "(?:(updated for Stellaris \`).+(\`))|(?:(Supports Stellaris version: \`).+(\`))"
