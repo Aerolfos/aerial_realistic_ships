@@ -16,10 +16,22 @@
 
 Customized and updated fork of [Realistic Ships](https://steamcommunity.com/sharedfiles/filedetails/?id=725596168).
 
+This mod features 6 new ship classes:
+
+- Support Cruisers
+- Electronic Attack Cruisers
+- Battlecruisers
+- Fleet Carriers
+- Lanceships
+- Guardian or Dreadnought
+
+
 ## Installation
 Steam owners can subscribe to the [Steam Workshop version of the mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2815979895).
 
 You can find manual installation instructions [here](https://github.com/Aerolfos/stellaris_mod_deploy_action/wiki/Mod-Installation).
+
+Downloads for the current and past versions are [here](https://github.com/Aerolfos/aerial_realistic_ships/releases).
 
 ## Credits
 Realistic Ships was originally created by Tal Ara'nh. Many thanks for the great mod.
