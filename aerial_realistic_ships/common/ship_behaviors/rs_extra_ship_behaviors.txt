@@ -2,6 +2,7 @@ ship_behavior = {
 	name = "adv_carrier"
 	preferred_attack_range = 220
 	formation_distance = 210
+	#formation_distance = max
 	return_to_formation_distance = 200
 
 	combat_target_anchor = root
