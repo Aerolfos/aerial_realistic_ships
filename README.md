@@ -33,6 +33,11 @@ You can find manual installation instructions [here](https://github.com/Aerolfos
 
 Downloads for the current and past versions are [here](https://github.com/Aerolfos/aerial_realistic_ships/releases).
 
+## Links
+- [Frequently Asked Questions](https://github.com/Aerolfos/aerial_realistic_ships/wiki/home)
+- [Documentation](https://github.com/Aerolfos/aerial_realistic_ships/wiki/Developer-Information)
+<!---[Latest release](https://github.com/Aerolfos/aerial_realistic_ships/releases/latest)--->
+
 ## Credits
 Realistic Ships was originally created by Tal Ara'nh. Many thanks for the great mod.
 
