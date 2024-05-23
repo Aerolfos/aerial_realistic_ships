@@ -8,7 +8,7 @@
 > [!NOTE]
 > The mod is updated for Stellaris `3.6`.
 
-![Blue Triangle](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png) Supports Stellaris version: `3.6.x`
+![Blue Triangle](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png) Supports Stellaris version: `3.12.x`
 
 ![No Achievement Icon](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png) Not achievement compatible.
 

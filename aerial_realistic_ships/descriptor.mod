@@ -1,5 +1,5 @@
 name="Aerial Realistic Ships"
-version="0.5.1"
+version="0.5.2"
 tags={
 	"Graphics"
 	"Gameplay"
@@ -9,5 +9,5 @@ tags={
 }
 path="mod/aerial_realistic_ships/aerial_realistic_ships"
 picture="thumbnail.png"
-supported_version="3.9.*"
+supported_version="3.12.*"
 remote_file_id="2815979895"
