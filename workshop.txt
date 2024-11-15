@@ -33,9 +33,9 @@ Not sure what to do about Heavy Dreadnoughts, so they also have PD and S slots s
 
 [u]Destroyers and battleships are overwritten to make new sections.[/u]
 
-[u]This mod should be compatible with most stuff by avoiding most overwrites. Non-vanilla shipsets will get fallback mammalian models though, for obvious reasons.[/u]
+[u]This mod should be compatible with many mods by avoiding most overwrites. Non-vanilla shipsets will get fallback mammalian models though, for obvious reasons.[/u]
 
-Graphics stuff is not yet finished, missing sections and ships.
+Graphics stuff is not yet finished, missing sections and ships. Full toxoid and newer shipsets missing.
 
 [u]Currently Supported Shipsets:[/u]
 [list]
@@ -60,6 +60,7 @@ Graphics stuff is not yet finished, missing sections and ships.
 [h3]Links[/h3]
 [url=https://github.com/Aerolfos/aerial_realistic_ships/releases/latest][img]https://img.shields.io/github/v/release/aerolfos/aerial_realistic_ships?logo=github&style=flat)[/img][/url] - Download from Github
 [url=https://github.com/Aerolfos/aerial_realistic_ships/][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_github_2.png[/img][/url]
+[url=https://github.com/Aerolfos/aerial_realistic_ships/wiki][img]https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/header_documentation_link.png[/img][/url]
 
 [h3]Credits[/h3]
 Based on [url=https://steamcommunity.com/sharedfiles/filedetails/?id=725596168]the original Realistic Ships mod[/url] by Tal Ara'nh.

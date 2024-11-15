@@ -5,9 +5,6 @@
 [![Repository License](https://img.shields.io/github/license/aerolfos/aerial_realistic_ships?style=flat&color=brightgreen)](LICENSE)
 <!---[![Discord](https://img.shields.io/discord/739835273969664050?style=flat&label=Discord&logo=discord&logoColor=white&color=7289DA)](https://discord.com/invite/xUrG9wh)--->
 
-> [!NOTE]
-> The mod is updated for Stellaris `3.6`.
-
 ![Blue Triangle](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/blue_caution_triangle.png) Supports Stellaris version: `3.12.x`
 
 ![No Achievement Icon](https://raw.githubusercontent.com/Aerolfos/stellaris_mod_deploy_action/main/assets/not_victorious_small.png) Not achievement compatible.
@@ -34,8 +31,8 @@ You can find manual installation instructions [here](https://github.com/Aerolfos
 Downloads for the current and past versions are [here](https://github.com/Aerolfos/aerial_realistic_ships/releases).
 
 ## Links
-- [Frequently Asked Questions](https://github.com/Aerolfos/aerial_realistic_ships/wiki/home)
-- [Documentation](https://github.com/Aerolfos/aerial_realistic_ships/wiki/Developer-Information)
+- [Frequently Asked Questions](https://github.com/Aerolfos/aerial_realistic_ships/wiki/Frequently-Asked-Questions)
+- [Documentation](https://github.com/Aerolfos/aerial_realistic_ships/wiki/home)
 <!---[Latest release](https://github.com/Aerolfos/aerial_realistic_ships/releases/latest)--->
 
 ## Credits

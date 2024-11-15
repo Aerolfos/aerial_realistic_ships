@@ -2,5 +2,3 @@ extra_loc_files_to_update={
 	"aerial_realistic_ships/localisation/english/l_english_rs.yml"
 }
 version_loc_key="rs_mod_version"
-# test with two sets of versions in readme to update
-readme_version_pattern = "(?:(The mod is updated for Stellaris \`).+(\`))|(?:(Supports Stellaris version: \`).+(\`))"
