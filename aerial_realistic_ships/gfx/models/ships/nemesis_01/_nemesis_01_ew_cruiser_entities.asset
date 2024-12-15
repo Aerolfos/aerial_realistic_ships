@@ -25,7 +25,7 @@
 
 #FRAME
 entity = {
-	name = "nemesis_01_rs_ea_cruiser_entity"
+	name = "nemesis_01_rs_ew_cruiser_entity"
 	pdxmesh = "nemesis_01_cruiser_frame_mesh"
 
 	default_state = "idle"
@@ -104,7 +104,7 @@ entity = {
 
 
 entity = {
-	name = "nemesis_01_rs_ea_cruiser_bow_A1S2_entity"
+	name = "nemesis_01_rs_ew_cruiser_bow_A1S2_entity"
 	pdxmesh = "nemesis_01_cruiser_bow_M1_S2_mesh"
 
 	default_state = "idle"
@@ -119,7 +119,7 @@ entity = {
 
 # MID
 entity = {
-	name = "nemesis_01_rs_ea_cruiser_mid_A2S2_entity"
+	name = "nemesis_01_rs_ew_cruiser_mid_A2S2_entity"
 	pdxmesh = "nemesis_01_cruiser_mid_M2_S2_mesh"
 
 	default_state = "idle"
@@ -136,7 +136,7 @@ entity = {
 
 # STERN
 entity = {
-	name = "nemesis_01_rs_ea_cruiser_stern_M1_entity"
+	name = "nemesis_01_rs_ew_cruiser_stern_M1_entity"
 	pdxmesh = "nemesis_01_cruiser_stern_M1_mesh"
 
 	default_state = "idle"
@@ -176,7 +176,7 @@ entity = {
 }
 
 entity = {
-	name = "nemesis_01_rs_ea_cruiser_stern_S2_entity"
+	name = "nemesis_01_rs_ew_cruiser_stern_S2_entity"
 	pdxmesh = "nemesis_01_cruiser_stern_S2_mesh"
 
 	default_state = "idle"

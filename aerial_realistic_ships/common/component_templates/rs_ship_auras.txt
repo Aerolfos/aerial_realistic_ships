@@ -6,6 +6,7 @@
 ### VARIABLES ###
 #################
 
+# update: pretty sure ranges do nothing and everything is system wide anyway...
 # used for buffs, works only for a fleet close together
 @shipAuraRangeShort = 60
 # debuffs need to hit enemies early on
@@ -279,7 +280,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -145
 	
-	size_restriction = { rs_ea_cruiser }
+	size_restriction = { rs_ew_cruiser }
 	component_set = "ship_aura_components"
 	
 	hostile_aura = {
@@ -321,7 +322,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -195
 
-	size_restriction = { rs_ea_cruiser }
+	size_restriction = { rs_ew_cruiser }
 	component_set = "ship_aura_components"
 	
 	hostile_aura = {
@@ -364,7 +365,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -235
 
-	size_restriction = { rs_ea_cruiser }
+	size_restriction = { rs_ew_cruiser }
 	component_set = "ship_aura_components"
 	
 	hostile_aura = {
@@ -404,7 +405,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -235
 
-	size_restriction = { rs_ea_cruiser }
+	size_restriction = { rs_ew_cruiser }
 	component_set = "ship_aura_components"
 	
 	hostile_aura = {

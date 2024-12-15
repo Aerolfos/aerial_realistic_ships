@@ -10,11 +10,11 @@
 ###########
 
 ship_section_template = {
-	key = "RS_EA_CRUISER_BOW_A1S2"
-	ship_size = rs_ea_cruiser
+	key = "RS_ew_cruiser_BOW_A1S2"
+	ship_size = rs_ew_cruiser
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "rs_ea_cruiser_bow_A1S2_entity"
+	entity = "rs_ew_cruiser_bow_A1S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { screen artillery explosive energy_torpedoes }
 	
@@ -54,11 +54,11 @@ ship_section_template = {
 ###########
 
 ship_section_template = {
-	key = "RS_EA_CRUISER_MID_A2S2"
-	ship_size = rs_ea_cruiser
+	key = "RS_ew_cruiser_MID_A2S2"
+	ship_size = rs_ew_cruiser
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = "rs_ea_cruiser_mid_A2S2_entity"
+	entity = "rs_ew_cruiser_mid_A2S2_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { screen artillery explosive energy_torpedoes }
 	
@@ -98,11 +98,11 @@ ship_section_template = {
 #############
 
 ship_section_template = {
-	key = "RS_EA_CRUISER_STERN_G1"
-	ship_size = rs_ea_cruiser
+	key = "RS_ew_cruiser_STERN_G1"
+	ship_size = rs_ew_cruiser
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "rs_ea_cruiser_stern_M1_entity"
+	entity = "rs_ew_cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { explosive energy_torpedoes }
 
@@ -125,11 +125,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_EA_CRUISER_STERN_M1"
-	ship_size = rs_ea_cruiser
+	key = "RS_ew_cruiser_STERN_M1"
+	ship_size = rs_ew_cruiser
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "rs_ea_cruiser_stern_M1_entity"
+	entity = "rs_ew_cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery }
 
@@ -152,11 +152,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_EA_CRUISER_STERN_S2"
-	ship_size = rs_ea_cruiser
+	key = "RS_ew_cruiser_STERN_S2"
+	ship_size = rs_ew_cruiser
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "rs_ea_cruiser_stern_S2_entity"
+	entity = "rs_ew_cruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery }
 
@@ -186,11 +186,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "RS_EA_CRUISER_STERN_P2"
-	ship_size = rs_ea_cruiser
+	key = "RS_ew_cruiser_STERN_P2"
+	ship_size = rs_ew_cruiser
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "rs_ea_cruiser_stern_S2_entity"
+	entity = "rs_ew_cruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { screen }
 

@@ -16,7 +16,7 @@ Customized and updated fork of [Realistic Ships](https://steamcommunity.com/shar
 This mod features 6 new ship classes:
 
 - Support Cruisers
-- Electronic Attack Cruisers
+- Electronic Warfare Cruisers
 - Battlecruisers
 - Fleet Carriers
 - Lanceships

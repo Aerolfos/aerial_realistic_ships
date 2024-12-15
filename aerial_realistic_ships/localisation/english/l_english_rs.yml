@@ -17,9 +17,9 @@
  #########################################
  # new ships
  tech_rs_auxiliary_cruisers:0 "$rs_auxiliary_cruiser_plural$"
- tech_rs_auxiliary_cruisers_desc:0 "Based upon heavily modified but lightly armed Cruiser hulls, these $rs_auxiliary_cruiser_plural$ were designed to fill support roles in fleets."
+ tech_rs_auxiliary_cruisers_desc:0 "Based upon heavily modified but lightly armed $cruiser$ hulls, these $rs_auxiliary_cruiser_plural$ were designed to fill support roles in fleets."
  tech_rs_battlecruisers:0 "$rs_battlecruiser_plural$"
- tech_rs_battlecruisers_desc:0 "Improvements in construction methodology indirectly led to the development of the $rs_battlecruiser$, the largest of the sub-capital ship classes. A viable alternative to Battleships, $rs_battlecruiser_plural$ now often serve as the core of sub-capital fleets."
+ tech_rs_battlecruisers_desc:0 "Improvements in construction methodology indirectly led to the development of the $rs_battlecruiser$, the largest of the sub-capital ship classes. A more flexible alternative to Battleships, $rs_battlecruiser_plural$ now often serve as the core of sub-capital fleets."
  tech_rs_carriers:0 "$rs_carrier_plural$"
  tech_rs_carriers_desc:0 "Widespread usage of capital ships has uncovered the need for a dedicated strike craft platform, leading to the creation of the $rs_carrier$."
  tech_rs_dreadnoughts:0 "$rs_dreadnought_plural$"
@@ -29,12 +29,12 @@
 
  TECH_UNLOCK_RS_SUPPORT_CRUISER_TITLE:0 "§HUnlocks Ship Type:§! $rs_support_cruiser$"
  TECH_UNLOCK_RS_SUPPORT_CRUISER_DESC:0 "§H$rs_support_cruiser$§!\nA heavily modified but lightly armed cruiser hull, $rs_support_cruiser_plural$ provide logistical support."
- TECH_UNLOCK_RS_EA_CRUISER_TITLE:0 "§HUnlocks Ship Type:§! $rs_ea_cruiser$"
- TECH_UNLOCK_RS_EA_CRUISER_DESC:0 "§H$rs_ea_cruiser$§!\n$rs_ea_cruiser_plural$ are a heavily modifier cruiser hull made for electronic warfare."
- TECH_UNLOCK_RS_AUXILIARY_CRUISERS_TITLE:0 "§HUnlocks Ship Type:§! $rs_support_cruiser$, $rs_ea_cruiser$"
+ TECH_UNLOCK_RS_ew_cruiser_TITLE:0 "§HUnlocks Ship Type:§! $rs_ew_cruiser$"
+ TECH_UNLOCK_RS_ew_cruiser_DESC:0 "§H$rs_ew_cruiser$§!\n$rs_ew_cruiser_short_plural$ are a heavily modifier cruiser hull made for electronic warfare."
+ TECH_UNLOCK_RS_AUXILIARY_CRUISERS_TITLE:0 "§HUnlocks Ship Type:§! $rs_support_cruiser$, $rs_ew_cruiser$"
  TECH_UNLOCK_RS_AUXILIARY_CRUISERS_DESC:0 "§H$rs_auxiliary_cruiser$§!\nBased on heavily modified but lightly armed Cruiser hulls, $rs_auxiliary_cruiser_plural$ are equipped with auras providing either offensive or defensive support for the fleet."
  TECH_UNLOCK_RS_BATTLECRUISER_TITLE:0 "§HUnlocks Ship Type:§! $rs_battlecruiser$"
- TECH_UNLOCK_RS_BATTLECRUISER_DESC:0 "§H$rs_battlecruiser$§!\nThe largest sub-capital ship class, $rs_battlecruiser_plural$ are used in place of Battleships in lighter fleets."
+ TECH_UNLOCK_RS_BATTLECRUISER_DESC:0 "§H$rs_battlecruiser$§!\nA lighter, more flexible variant on the $battleship$ ship class, $rs_battlecruiser_plural$ can be used to lead lighter fleets or fill secondary roles in heavy fleets."
  TECH_UNLOCK_RS_CARRIER_TITLE:0 "§HUnlocks Ship Type:§! $rs_carrier$"
  TECH_UNLOCK_RS_CARRIER_DESC:0 "§H$rs_carrier$§!\n$rs_carrier_plural$ are dedicated capital class strike craft platforms, specialized for maintaining space superiority."
  TECH_UNLOCK_RS_DREADNOUGHT_TITLE:0 "§HUnlocks Ship Type:§! $rs_dreadnought$"
@@ -92,14 +92,14 @@
  RS_SUPPORT_CRUISER_STERN_P2:0 "Picket Ship Stern"
  RS_SUPPORT_CRUISER_STERN_M1:0 "Broadside Stern"
  #########################################
- # RS Electronic Attack Cruiser Sections #
+ # RS Electronic Warfare Cruiser Sections #
  #########################################
- RS_EA_CRUISER_BOW_A1S2:0 "Destabilizer Bow"
- RS_EA_CRUISER_MID_A2S2:0 "Dampener Core"
- RS_EA_CRUISER_STERN_G1:0 "Torpedo Stern"
- RS_EA_CRUISER_STERN_S2:0 "Gunship Stern"
- RS_EA_CRUISER_STERN_P2:0 "Picket Ship Stern"
- RS_EA_CRUISER_STERN_M1:0 "Broadside Stern"
+ RS_ew_cruiser_BOW_A1S2:0 "Destabilizer Bow"
+ RS_ew_cruiser_MID_A2S2:0 "Dampener Core"
+ RS_ew_cruiser_STERN_G1:0 "Torpedo Stern"
+ RS_ew_cruiser_STERN_S2:0 "Gunship Stern"
+ RS_ew_cruiser_STERN_P2:0 "Picket Ship Stern"
+ RS_ew_cruiser_STERN_M1:0 "Broadside Stern"
  #########################################
  # RS BattleCruiser Sections             #
  #########################################
@@ -355,7 +355,33 @@
  RS_BATTLESHIP_SHIP_THRUSTER_5_DESC:0 "$SHIP_THRUSTER_5_DESC$"
  RS_TITAN_SHIP_THRUSTER_5:0 "$SHIP_THRUSTER_5$"
  RS_TITAN_SHIP_THRUSTER_5_DESC:0 "$SHIP_THRUSTER_5_DESC$"
-
+ #########################################
+ # Modifiers                             #
+ #########################################
+ mod_shipsize_rs_support_cruiser_build_speed_mult:0 "$rs_support_cruiser$ Build Speed"
+ mod_shipsize_rs_support_cruiser_hull_mult:0 "$rs_support_cruiser$ Hull Points Mult"
+ mod_shipsize_rs_support_cruiser_hull_add:0 "$rs_support_cruiser$ Hull Points Add"
+ mod_shipsize_rs_support_cruiser_evasion_mult:0 "$rs_support_cruiser$ Evasion"
+ mod_shipsize_rs_support_cruiser_disengage_chance_mult:0 "$rs_support_cruiser$ Disengage Chance"
+ mod_shipsize_rs_support_cruiser_tracking_mult:0 "$rs_support_cruiser$ Tracking"
+ mod_shipsize_rs_ew_cruiser_build_speed_mult:0 "$rs_ew_cruiser$ Build Speed"
+ mod_shipsize_rs_ew_cruiser_hull_mult:0 "$rs_ew_cruiser$ Hull Points Mult"
+ mod_shipsize_rs_ew_cruiser_hull_add:0 "$rs_ew_cruiser$ Hull Points Add"
+ mod_shipsize_rs_ew_cruiser_evasion_mult:0 "$rs_ew_cruiser$ Evasion"
+ mod_shipsize_rs_ew_cruiser_disengage_chance_mult:0 "$rs_ew_cruiser$ Disengage Chance"
+ mod_shipsize_rs_ew_cruiser_tracking_mult:0 "$rs_ew_cruiser$ Tracking"
+ mod_shipsize_rs_battlecruiser_evasion_mult:0 "$rs_battlecruiser$ Evasion"
+ mod_shipsize_rs_battlecruiser_disengage_chance_mult:0 "$rs_battlecruiser$ Disengage Chance"
+ mod_shipsize_rs_battlecruiser_tracking_mult:0 "$rs_battlecruiser$ Tracking"
+ mod_shipsize_rs_carrier_evasion_mult:0 "$rs_carrier$ Evasion"
+ mod_shipsize_rs_carrier_disengage_chance_mult:0 "$rs_carrier$ Disengage Chance"
+ mod_shipsize_rs_carrier_tracking_mult:0 "$rs_carrier$ Tracking"
+ mod_shipsize_rs_dreadnought_evasion_mult:0 "$rs_dreadnought$ Evasion"
+ mod_shipsize_rs_dreadnought_disengage_chance_mult:0 "$rs_dreadnought$ Disengage Chance"
+ mod_shipsize_rs_dreadnought_tracking_mult:0 "$rs_dreadnought$ Tracking"
+ mod_shipsize_rs_heavy_dreadnought_evasion_mult:0 "$rs_heavy_dreadnought$ Evasion"
+ mod_shipsize_rs_heavy_dreadnought_disengage_chance_mult:0 "$rs_heavy_dreadnought$ Disengage Chance"
+ mod_shipsize_rs_heavy_dreadnought_tracking_mult:0 "$rs_heavy_dreadnought$ Tracking"
  #########################################
  # DEBUG                                 #
  #########################################

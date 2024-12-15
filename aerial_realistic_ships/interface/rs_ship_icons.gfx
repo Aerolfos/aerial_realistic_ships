@@ -16,18 +16,18 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ship_size_rs_ea_cruiser"
-		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ea_cruiser.dds"
+		name = "GFX_ship_size_rs_ew_cruiser"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ew_cruiser.dds"
 	}
 
 	spriteType = {
-		name = "GFX_ship_size_rs_ea_cruiser_top"
-		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ea_cruiser_top.dds"
+		name = "GFX_ship_size_rs_ew_cruiser_top"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ew_cruiser_top.dds"
 	}
 
 	spriteType = {
-		name = "GFX_ship_size_rs_ea_cruiser_top_damaged"
-		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ea_cruiser_top_damaged.dds"
+		name = "GFX_ship_size_rs_ew_cruiser_top_damaged"
+		textureFile = "gfx/interface/icons/ship_sizes/ship_size_rs_ew_cruiser_top_damaged.dds"
 	}
 
 	spriteType = {

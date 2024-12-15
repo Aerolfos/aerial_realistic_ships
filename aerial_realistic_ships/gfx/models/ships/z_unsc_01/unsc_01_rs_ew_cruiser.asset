@@ -1,7 +1,7 @@
 
 entity = {
-	name = "unsc_01_rs_ea_cruiser_entity"
-	pdxmesh = "unsc_01_rs_ea_cruiser_frame_mesh"
+	name = "unsc_01_rs_ew_cruiser_entity"
+	pdxmesh = "unsc_01_rs_ew_cruiser_frame_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle"	
@@ -23,18 +23,18 @@ entity = {
 }
 
 entity = {
-	name = "unsc_01_rs_ea_cruiser_bow_A1S2_entity"
-	pdxmesh = "unsc_01_rs_ea_cruiser_bow_A1S2_mesh"
+	name = "unsc_01_rs_ew_cruiser_bow_A1S2_entity"
+	pdxmesh = "unsc_01_rs_ew_cruiser_bow_A1S2_mesh"
 }
 
 entity = {
-	name = "unsc_01_rs_ea_cruiser_mid_A2S2_entity"
-	pdxmesh = "unsc_01_rs_ea_cruiser_mid_A2S2_mesh"
+	name = "unsc_01_rs_ew_cruiser_mid_A2S2_entity"
+	pdxmesh = "unsc_01_rs_ew_cruiser_mid_A2S2_mesh"
 }
 
 entity = {
-	name = "unsc_01_rs_ea_cruiser_stern_S2_entity"
-	pdxmesh = "unsc_01_rs_ea_cruiser_stern_mesh"
+	name = "unsc_01_rs_ew_cruiser_stern_S2_entity"
+	pdxmesh = "unsc_01_rs_ew_cruiser_stern_mesh"
 	
 	state = { name = "moving" state_time = 5		
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }
@@ -48,8 +48,8 @@ entity = {
 }
 
 entity = {
-	name = "unsc_01_rs_ea_cruiser_stern_M1_entity"
-	pdxmesh = "unsc_01_rs_ea_cruiser_stern_mesh"
+	name = "unsc_01_rs_ew_cruiser_stern_M1_entity"
+	pdxmesh = "unsc_01_rs_ew_cruiser_stern_mesh"
 	
 	state = { name = "moving" state_time = 5		
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_cruiser" } }

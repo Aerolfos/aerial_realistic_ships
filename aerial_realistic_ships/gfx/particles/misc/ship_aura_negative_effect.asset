@@ -1,9 +1,9 @@
 ###########################
-### RS PARTCILE EFFECTS ###
+### RS PARTICLE EFFECTS ###
 ###########################
 
 particle={
-	name="ship_aura_negative_effect"
+	name="rs_ship_aura_negative_effect"
 	subsystem={
 		name="flare"
 		max_amount=20

@@ -31,29 +31,29 @@
 @support_cruiser_upkeep_alloys = 0.4
 
 ##################
-# EA CRUISER
+# EW CRUISER
 ##################
 
-@ea_cruiser_collision_radius = 3.5
-@ea_cruiser_formation_priority = 36
+@ew_cruiser_collision_radius = 3.5
+@ew_cruiser_formation_priority = 36
 
 # slightly faster than regular cruiser
-@ea_cruiser_acceleration = 0.3
-@ea_cruiser_rotation_speed = 0.182
+@ew_cruiser_acceleration = 0.3
+@ew_cruiser_rotation_speed = 0.182
 
-@ea_cruiser_max_speed = 125
+@ew_cruiser_max_speed = 125
 
-@ea_cruiser_naval_cap = 5
-@ea_cruiser_fleet_slot = 3
+@ew_cruiser_naval_cap = 5
+@ew_cruiser_fleet_slot = 3
 
-@ea_cruiser_hp = 1600
-@ea_cruiser_evasion = 20
-@ea_cruiser_disengage_chance = 1.60
-@ea_cruiser_piracy_suppression = 6
-@ea_cruiser_build_time = 280
+@ew_cruiser_hp = 1600
+@ew_cruiser_evasion = 20
+@ew_cruiser_disengage_chance = 1.60
+@ew_cruiser_piracy_suppression = 6
+@ew_cruiser_build_time = 280
 
-@ea_cruiser_upkeep_energy = 2
-@ea_cruiser_upkeep_alloys = 0.4
+@ew_cruiser_upkeep_energy = 2
+@ew_cruiser_upkeep_alloys = 0.4
 
 ##################
 # BATTLECRUISER

@@ -37,7 +37,7 @@ utility_component_template = {
 	ship_behavior = "line"
 
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser }	
+	size_restriction = { rs_support_cruiser rs_ew_cruiser }
 	component_set = "combat_computers"
 	upgrades_to = "RS_COMBAT_COMPUTER_LINE_BASIC"
 
@@ -118,7 +118,7 @@ utility_component_template = {
 	ship_behavior = "torpedo"
 
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	upgrades_to = "RS_COMBAT_COMPUTER_TORPEDO_BASIC"
 	ai_tags = { explosive }
@@ -147,7 +147,7 @@ utility_component_template = {
 	}
 
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_1" "tech_torpedoes_1" }
@@ -177,7 +177,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_2" "tech_torpedoes_1" }
@@ -207,7 +207,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_3" "tech_torpedoes_1" }
@@ -246,7 +246,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_autonomous" "tech_torpedoes_1" }
@@ -276,7 +276,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_precognition_interface" "tech_torpedoes_1" }
@@ -310,7 +310,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_1" }
@@ -342,7 +342,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_2" }
@@ -374,7 +374,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_3" }
@@ -417,7 +417,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -450,7 +450,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_precognition_interface" }
@@ -484,7 +484,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought }	
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_1" }
@@ -516,7 +516,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought }	
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_2" }
@@ -548,7 +548,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought }	
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_3" }
@@ -589,7 +589,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought }	
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -620,7 +620,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought }	
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_precognition_interface" }
@@ -656,7 +656,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_1" }
@@ -688,7 +688,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_2" }
@@ -720,7 +720,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_3" }
@@ -761,7 +761,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -792,7 +792,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_precognition_interface" }
@@ -826,7 +826,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_1" }
@@ -857,7 +857,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_2" }
@@ -888,7 +888,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_3" }
@@ -929,7 +929,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -959,7 +959,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { rs_support_cruiser rs_ea_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
+	size_restriction = { rs_support_cruiser rs_ew_cruiser rs_battlecruiser rs_carrier rs_dreadnought rs_heavy_dreadnought }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_precognition_interface" }

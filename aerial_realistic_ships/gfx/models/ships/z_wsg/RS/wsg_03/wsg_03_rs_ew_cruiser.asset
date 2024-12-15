@@ -2,8 +2,8 @@
 
 #FRAME
 entity = {
-	name = "wsg_02_rs_ea_cruiser_entity"
-	pdxmesh = "wsg_02_explorationship_mesh"
+	name = "wsg_03_rs_ew_cruiser_entity"
+	pdxmesh = "wsg_03_explorationship_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" animation_blend_time = 0.25
@@ -54,8 +54,8 @@ entity = {
 
 # BOW
 entity = {
-	name = "wsg_02_rs_ea_cruiser_bow_A1S2_entity"
-	pdxmesh = "wsg_02_explorationship_mesh"
+	name = "wsg_03_rs_ew_cruiser_bow_A1S2_entity"
+	pdxmesh = "wsg_03_explorationship_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -86,11 +86,11 @@ entity = {
 
 
 
-# MID1
+# MID
 
 entity = {
-	name = "wsg_02_rs_ea_cruiser_mid_A2S2_entity"
-	pdxmesh = "wsg_02_explorationship_mesh"
+	name = "wsg_03_rs_ew_cruiser_mid_A2S2_entity"
+	pdxmesh = "wsg_03_explorationship_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -127,11 +127,10 @@ entity = {
 	}
 }
 
-
 # STERN
 entity = {
-	name = "wsg_02_rs_ea_cruiser_stern_M1_entity"
-	pdxmesh = "wsg_02_explorationship_mesh"
+	name = "wsg_03_rs_ew_cruiser_stern_M1_entity"
+	pdxmesh = "wsg_03_explorationship_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -166,8 +165,8 @@ entity = {
 }
 
 entity = {
-	name = "wsg_02_rs_ea_cruiser_stern_S2_entity"
-	pdxmesh = "wsg_02_explorationship_mesh"
+	name = "wsg_03_rs_ew_cruiser_stern_S2_entity"
+	pdxmesh = "wsg_03_explorationship_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5	}

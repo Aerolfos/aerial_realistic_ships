@@ -9,7 +9,7 @@
 #############
 
 entity = {
-	name = "humanoid_01_rs_ea_cruiser_entity"
+	name = "humanoid_01_rs_ew_cruiser_entity"
 	pdxmesh = "humanoid_01_cruiser_frame_mesh"
 	
 	default_state = "idle"
@@ -69,7 +69,7 @@ entity = {
 ###########
 
 entity = {
-	name = "humanoid_01_rs_ea_cruiser_bow_A1S2_entity"
+	name = "humanoid_01_rs_ew_cruiser_bow_A1S2_entity"
 	pdxmesh = "humanoid_01_cruiser_bow_M1S2_mesh"
 
 	locator = { name = "part4"	position = { 0 1.97 -2.4 } rotation = { 0 -90 0 } }
@@ -94,7 +94,7 @@ entity = {
 ###########
 
 entity = {
-	name = "humanoid_01_rs_ea_cruiser_mid_A2S2_entity"
+	name = "humanoid_01_rs_ew_cruiser_mid_A2S2_entity"
 	pdxmesh = "humanoid_01_cruiser_mid_M2S2_mesh"
 
 	locator = { name = "part6"	position = { 0 2.15 0.5 } rotation = { 0 -90 0 } }
@@ -123,7 +123,7 @@ entity = {
 #############
 
 entity = {
-	name = "humanoid_01_rs_ea_cruiser_stern_M1_entity"
+	name = "humanoid_01_rs_ew_cruiser_stern_M1_entity"
 	pdxmesh = "humanoid_01_cruiser_stern_M1_mesh"
 	
 	default_state = "idle"
@@ -163,7 +163,7 @@ entity = {
 }
 
 entity = {
-	name = "humanoid_01_rs_ea_cruiser_stern_S2_entity"
+	name = "humanoid_01_rs_ew_cruiser_stern_S2_entity"
 	pdxmesh = "humanoid_01_cruiser_stern_S2_mesh"
 	
 	default_state = "idle"

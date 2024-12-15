@@ -8,7 +8,7 @@ This mod features 6 new ship classes:
 
 [list]
     [*] Support Cruisers
-    [*] Electronic Attack Cruisers
+    [*] Electronic Warfare Cruisers
     [*] Battlecruisers
 	[*] Fleet Carriers
 	[*] Dreadnoughts

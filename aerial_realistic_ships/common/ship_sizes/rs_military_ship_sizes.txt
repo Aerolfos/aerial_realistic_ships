@@ -65,26 +65,26 @@ rs_support_cruiser = {
 	}
 }
 
-rs_ea_cruiser = {
-	formation_priority = @ea_cruiser_formation_priority
-	max_speed = @ea_cruiser_max_speed
-	acceleration = @ea_cruiser_acceleration
-	rotation_speed = @ea_cruiser_rotation_speed
-	collision_radius = @ea_cruiser_collision_radius
+rs_ew_cruiser = {
+	formation_priority = @ew_cruiser_formation_priority
+	max_speed = @ew_cruiser_max_speed
+	acceleration = @ew_cruiser_acceleration
+	rotation_speed = @ew_cruiser_rotation_speed
+	collision_radius = @ew_cruiser_collision_radius
 
 	modifier = { 
-		ship_evasion_add = @ea_cruiser_evasion
-		ship_piracy_suppression_add = @ea_cruiser_piracy_suppression
+		ship_evasion_add = @ew_cruiser_evasion
+		ship_piracy_suppression_add = @ew_cruiser_piracy_suppression
  	}
 
-	max_hitpoints = @ea_cruiser_hp
-	size_multiplier = @ea_cruiser_naval_cap
-	fleet_slot_size = @ea_cruiser_fleet_slot
+	max_hitpoints = @ew_cruiser_hp
+	size_multiplier = @ew_cruiser_naval_cap
+	fleet_slot_size = @ew_cruiser_fleet_slot
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 5
 	is_space_station = no
-	icon = ship_size_rs_ea_cruiser
-	base_buildtime = @ea_cruiser_build_time
+	icon = ship_size_rs_ew_cruiser
+	base_buildtime = @ew_cruiser_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = yes
@@ -94,7 +94,7 @@ rs_ea_cruiser = {
 	default_behavior = line
 	ship_roles = { screen artillery explosive energy_torpedoes }
 
-	combat_disengage_chance = @ea_cruiser_disengage_chance
+	combat_disengage_chance = @ew_cruiser_disengage_chance
 	
 	class = shipclass_military
 	construction_type = starbase_shipyard
@@ -108,8 +108,8 @@ rs_ea_cruiser = {
 	resources = {
 		category = ships
 		upkeep = {
-			energy = @ea_cruiser_upkeep_energy
-			alloys = @ea_cruiser_upkeep_alloys
+			energy = @ew_cruiser_upkeep_energy
+			alloys = @ew_cruiser_upkeep_alloys
 		}
 	}
 
@@ -318,7 +318,7 @@ rs_dreadnought = {
 		fraction = {
 			base = 0
 			modifier = {
-				add = 25
+				add = 10
 				uses_standard_ship_sizes = yes
 			}
 			modifier = {
