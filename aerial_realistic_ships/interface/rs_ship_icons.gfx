@@ -1,4 +1,9 @@
 spriteTypes = {
+	# mod text icon
+	spriteType = {
+		name = "GFX_text_icon_aerial_realistic_ships_mod"
+		textureFile = "gfx/interface/icons/icon_aerial_realistic_ships_mod.dds"
+	}
 	# ship icons
 	spriteType = {
 		name = "GFX_ship_size_rs_support_cruiser"
