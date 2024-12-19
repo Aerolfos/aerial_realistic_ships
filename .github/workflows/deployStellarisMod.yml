@@ -28,7 +28,12 @@ on:
           Expects a CHANGELOG.md file in target repo
         required: true
         type: boolean
-      
+      updateLoc:
+        description: 'Copy english loc entries to other languages?'
+        required: true
+        type: boolean
+        default: true
+
 permissions:
   contents: write
 
@@ -39,4 +44,5 @@ jobs:
       versionType: ${{ inputs.versionType }}
       versionStellaris: ${{ inputs.versionStellaris }}
       useChangelog: ${{ inputs.useChangelog }}
+      updateLoc: ${{ inputs.updateLoc }}
 
