@@ -252,7 +252,7 @@ rs_carrier = {
 				uses_standard_ship_sizes = yes
 			}
 			modifier = {
-				factor = 3
+				factor = 4
 				is_preferred_weapons = weapon_type_strike_craft
 			}
 		}
@@ -322,8 +322,16 @@ rs_dreadnought = {
 				uses_standard_ship_sizes = yes
 			}
 			modifier = {
-				factor = 1.5
+				factor = 10
 				NOT = { is_preferred_weapons = weapon_type_strike_craft }
+				OR = {
+					is_preferred_weapons = weapon_type_energy
+					is_preferred_weapons = weapon_type_kinetic
+				}
+			}
+			modifier = {
+				factor = 0.5
+				is_preferred_weapons = weapon_type_strike_craft
 			}
 		}
 	}
@@ -416,12 +424,16 @@ rs_heavy_dreadnought = {
 		fraction = {
 			base = 0
 			modifier = {
-				add = 25
+				add = 0
 				uses_standard_ship_sizes = yes
 			}
 			modifier = {
-				factor = 1.5
-				NOT = { is_preferred_weapons = weapon_type_strike_craft }
+				add = 200
+				OR = {
+					is_specialist_subject_type = { TYPE = bulwark }
+					has_ai_personality = xenophobic_isolationists
+					is_sovereign_guardianship_empire = yes
+				}
 			}
 		}
 	}

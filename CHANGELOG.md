@@ -8,7 +8,14 @@
 - Rename Dreadnought to Lanceship, and Heavy Dreadnought to Guardian Ship
   - Rework of these ships and their roles to come
   - Code names are not changed, they will keep internal names as is
-- WIP mess with aura effects and remove overwrite (crashes?)
+- Stop overwriting aura particles for no obvious reason
+  - Probably need to modify RS ship graphics further
+- Change ship fractions used by AI
+  - needs more work on specializing fleets
+- Need to fix tech modifiers (will probably need an overwrite)
+- Need graphics for new shipsets (yaaay)
+- Need to work on spreadsheet to change the big ship balance
+  - Method to auto-generate some documentation on them and their slots?
 ---
 
 ---
