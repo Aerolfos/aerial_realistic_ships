@@ -1,0 +1,8 @@
+# list of XL slot weapons for filling in prereqs
+$PREFIX$tech_energy_lance_1
+$PREFIX$tech_energy_lance_2
+$PREFIX$tech_arc_emitter_1
+$PREFIX$tech_arc_emitter_2
+$PREFIX$tech_mass_accelerator_1
+$PREFIX$tech_mass_accelerator_2
+$PREFIX$tech_archaeo_mass_accelerator

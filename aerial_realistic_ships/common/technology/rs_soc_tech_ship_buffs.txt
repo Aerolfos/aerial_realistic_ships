@@ -6,7 +6,6 @@
 #################################
 ### SUB-CAPITAL SHIP UPGRADES ###
 #################################
-
 tech_rs_auxiliary_cruiser_build_speed = {
 	cost = @tier3cost2
 	area = society
@@ -36,7 +35,7 @@ tech_rs_auxiliary_cruiser_build_speed = {
 	}
 
 	ai_weight = {
-
+		weight = 1.5
 	}
 }
 
@@ -64,7 +63,7 @@ tech_rs_auxiliary_cruiser_hull_1 = {
 	}
 
 	ai_weight = {
-
+		weight = @ai_factor_buff_techs
 	}
 }
 
@@ -106,14 +105,13 @@ tech_rs_auxiliary_cruiser_hull_2 = {
 	}
 
 	ai_weight = {
-
+		weight = @ai_factor_buff_techs
 	}
 }
 
 #############################
 ### CARRIER SHIP UPGRADES ###
 #############################
-
 tech_rs_carrier_build_speed = {
 	cost = @tier4cost3
 	area = society
@@ -140,13 +138,7 @@ tech_rs_carrier_build_speed = {
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = 1.5
 	}
 }
 
@@ -161,6 +153,17 @@ tech_rs_carrier_hull_1 = {
 	modifier = {
 		custom_tooltip = tech_rs_carrier_hull_effect
 		shipsize_rs_carrier_hull_add = 500
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		weight = @ai_factor_buff_techs
 	}
 }
 
@@ -182,60 +185,30 @@ tech_rs_carrier_hull_2 = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_military_theory"
-				}
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_rs_auxiliary_cruiser_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_rs_carrier_hull_2
 		}
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = @ai_factor_buff_techs
 	}
 }
 
 ############################
 ### DN/HDN SHIP UPGRADES ###
 ############################
-
 # build speed
 tech_dn_build_speed = {
 	cost = @tier4cost3
@@ -252,23 +225,11 @@ tech_dn_build_speed = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = 1.5
 	}
 }
 
@@ -287,23 +248,11 @@ tech_hdn_build_speed = {
 	}
 
 	weight_modifier = {
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = 1.5
 	}
 }
 
@@ -326,24 +275,10 @@ tech_dn_hull_1 = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
 	}
-	
+
 	ai_weight = {
-		factor = @ai_ship_types_factor
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = @ai_factor_buff_techs
 	}
 }
 
@@ -365,24 +300,10 @@ tech_hdn_hull_1 = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
 	}
 	
 	ai_weight = {
-		factor = @ai_ship_types_factor
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = @ai_factor_buff_techs
 	}
 }
 
@@ -405,53 +326,24 @@ tech_dn_hull_2 = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_military_theory"
-				}
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_dn_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_dn_hull_2
 		}
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = @ai_factor_buff_techs
 	}
 }
 
@@ -473,52 +365,23 @@ tech_hdn_hull_2 = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = society
-					has_trait = "leader_trait_expertise_military_theory"
-				}
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_hdn_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_hdn_hull_2
 		}
 		modifier = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
-		}
+		weight = @ai_factor_buff_techs
 	}
 }

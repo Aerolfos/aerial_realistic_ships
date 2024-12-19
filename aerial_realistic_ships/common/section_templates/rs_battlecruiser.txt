@@ -53,7 +53,20 @@ ship_section_template = {
 		factor = 2
 	}
 
-	prerequisites = { tech_energy_lance_1 tech_energy_lance_2 tech_arc_emitter_1 tech_arc_emitter_2 tech_mass_accelerator_1 tech_mass_accelerator_2 }
+	ship_modifier = {
+		ship_weapon_damage = -0.50
+	}
+
+	modifier = {
+		ship_base_speed_mult = -0.50
+	}
+
+	prerequisites = {
+		inline_script = {
+			script = "rs_list_xl_weapons"
+			PREFIX = ""
+		}
+	}
 	
 	component_slot = {
 		name = "EXTRA_LARGE_01"

@@ -2,7 +2,13 @@
 
 ---
 ## Aerial Realistic Ships Version `WIP`:
-- Newest changes
+- Rename Electronic Attack Cruiser to Electronic Warfare (EW) Cruiser
+  - Refactored in files too
+- Redo ship descriptions
+- Rename Dreadnought to Lanceship, and Heavy Dreadnought to Guardian Ship
+  - Rework of these ships and their roles to come
+  - Code names are not changed, they will keep internal names as is
+- WIP mess with aura effects and remove overwrite (crashes?)
 ---
 
 ---

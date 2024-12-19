@@ -20,7 +20,7 @@ This mod features 6 new ship classes:
 - Battlecruisers
 - Fleet Carriers
 - Lanceships
-- Guardian or Dreadnought
+- Guardian Ships
 
 
 ## Installation

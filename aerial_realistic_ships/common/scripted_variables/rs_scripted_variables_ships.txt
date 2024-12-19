@@ -5,6 +5,9 @@
 #@speed_fast = 140
 #@speed_very_fast = 160
 
+# weight to pick buff techs for AI
+@ai_factor_buff_techs = 0.75
+
 ##################
 # SUPPORT CRUISER
 ##################

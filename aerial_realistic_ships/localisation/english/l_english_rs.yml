@@ -23,7 +23,7 @@
  tech_rs_carriers:0 "$rs_carrier_plural$"
  tech_rs_carriers_desc:0 "Widespread usage of capital ships has uncovered the need for a dedicated strike craft platform, leading to the creation of the $rs_carrier$."
  tech_rs_dreadnoughts:0 "$rs_dreadnought_plural$"
- tech_rs_dreadnoughts_desc:0 "Advancements in engineering design and power routing/optimizations allowed the addition of an extra section to the already impressive Battleship hull. The result, the $rs_dreadnought$ capital ship class."
+ tech_rs_dreadnoughts_desc:0 "Practical experience with spinal mount weaponry, along with advancements in engineering design and power routing have allowed for a larger, more specialized variant of the $battleship$ hull. The result, the $rs_dreadnought_short$ capital ship class."
  tech_rs_heavy_dreadnoughts:0 "$rs_heavy_dreadnought_plural$"
  tech_rs_heavy_dreadnoughts_desc:0 "There is always demand for ever larger vessels, and after extensive upgrades the $rs_dreadnought$ was upscaled into the $rs_heavy_dreadnought$ design."
 

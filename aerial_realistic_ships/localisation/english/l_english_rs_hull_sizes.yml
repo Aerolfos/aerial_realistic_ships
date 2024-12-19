@@ -35,13 +35,15 @@
  rs_dreadnought_plural:0 "Lanceships"
  rs_dreadnought_short:0 "Lancer"
  rs_dreadnought_short_plural:0 "Lancers"
- rs_dreadnought_desc:0 "Experience with extra-large Advancements in engineering design and power routing/optimizations allowed the addition of an extra section to the already impressive Battleship hull. The result, the $rs_dreadnought$ capital ship class."
+ rs_dreadnought_desc:0 "The $rs_dreadnought$, or $rs_dreadnought_short$, is a capital ship built entirely around its spinal mount, and specialized purely in long range strikes. It is not very resilient if unsupported."
 
  rs_heavy_dreadnought:0 "Guardian Ship"
  rs_heavy_dreadnought_plural:0 "Guardian Ships"
  rs_heavy_dreadnought_short:0 "Guardian"
  rs_heavy_dreadnought_short_plural:0 "Guardians"
- rs_heavy_dreadnought_desc:0 "Often serving as a symbol of space naval power, the $rs_heavy_dreadnought$ is the largest capital ship type with significant improvements in armor and firepower over others in its class."
+ rs_heavy_dreadnought_desc:0 "The $rs_heavy_dreadnought$ is a specialized defensive heavy capital ship, trading any significant FTL capabilities or mobility for oversized weaponry and heavy armor. The $rs_heavy_dreadnought_short$ is similar in concept to the coastal defense ships of ancient planetbound navies."
+ # old desc
+ # Often serving as a symbol of space naval power, the $rs_heavy_dreadnought$ is the largest capital ship type with significant improvements in armor and firepower over others in its class.
  #########################################
  # Modifiers                             #
  #########################################

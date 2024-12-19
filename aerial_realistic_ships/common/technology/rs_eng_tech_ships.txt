@@ -24,7 +24,7 @@ tech_rs_auxiliary_cruisers = {
 	}
 	
 	modifier = {
-		country_command_limit_add = 10
+		command_limit_add = 10
 	}
 
 	weight_modifier = {
@@ -58,24 +58,10 @@ tech_rs_auxiliary_cruisers = {
             factor = 1.25
             is_bugged_war_engineers = yes
         }
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 
 	ai_weight = {
 		weight = @ai_ship_types_factor
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 }
 
@@ -97,7 +83,7 @@ tech_rs_battlecruisers = {
 	}
 
 	modifier = {
-		country_command_limit_add = 10
+		command_limit_add = 10
 	}
 	
 	weight_modifier = {
@@ -131,24 +117,10 @@ tech_rs_battlecruisers = {
             factor = 1.25
             is_bugged_war_engineers = yes
         }
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 
 	ai_weight = {
 		weight = @ai_ship_types_factor
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 }
 
@@ -170,7 +142,7 @@ tech_rs_carriers = {
 	}
 
 	modifier = {
-		country_command_limit_add = 10
+		command_limit_add = 10
 	}
 
 	weight_modifier = {
@@ -204,24 +176,10 @@ tech_rs_carriers = {
             factor = 1.25
             is_bugged_war_engineers = yes
         }
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 
 	ai_weight = {
 		weight = @ai_ship_types_factor
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 }
 
@@ -242,7 +200,7 @@ tech_rs_dreadnoughts = {
 	}
 
 	modifier = {
-		country_command_limit_add = 10
+		command_limit_add = 10
 	}
 	
 	weight_modifier = {
@@ -276,24 +234,21 @@ tech_rs_dreadnoughts = {
             factor = 1.25
             is_bugged_war_engineers = yes
         }
+
+		# only roll if one of the XL slot weapons has been researched
 		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+			set = 0
+			NOR = {
+				inline_script = {
+					script = "rs_list_xl_weapons"
+					PREFIX = "has_technology = "
+				}
 			}
 		}
 	}
 	
 	ai_weight = {
 		weight = @ai_ship_types_factor
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 }
 
@@ -307,7 +262,7 @@ tech_rs_heavy_dreadnoughts = {
 	ai_update_type = military
 
 	modifier = {
-		country_command_limit_add = 10
+		command_limit_add = 10
 	}
 
 	prereqfor_desc = {
@@ -348,24 +303,21 @@ tech_rs_heavy_dreadnoughts = {
             factor = 1.25
             is_bugged_war_engineers = yes
         }
+
+		# only roll if one of the XL slot weapons has been researched
 		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
+			set = 0
+			NOR = {
+				inline_script = {
+					script = "rs_list_xl_weapons"
+					PREFIX = "has_technology = "
+				}
 			}
 		}
 	}
 
 	ai_weight = {
 		weight = @ai_ship_types_factor
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_voidcraft"
-			}
-		}
 	}
 }
 
