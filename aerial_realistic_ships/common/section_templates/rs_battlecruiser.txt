@@ -62,10 +62,13 @@ ship_section_template = {
 	}
 
 	prerequisites = {
-		inline_script = {
-			script = "rs_list_xl_weapons"
-			PREFIX = ""
-		}
+		tech_energy_lance_1
+		tech_energy_lance_2
+		tech_arc_emitter_1
+		tech_arc_emitter_2
+		tech_mass_accelerator_1
+		tech_mass_accelerator_2
+		tech_archaeo_mass_accelerator
 	}
 	
 	component_slot = {
