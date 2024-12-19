@@ -1,0 +1,363 @@
+﻿l_german:
+  #########################################
+  # Mod Info                         #
+  #########################################
+  rs_mod_version:99 "v0.5.3"
+  #########################################
+  # Section Slots                         #
+  #########################################
+  #bow:99 "Bow"
+  #mid:99 "Core"
+  mid1:99 "Fore Amidships"
+  mid2:99 "Amidships"
+  mid3:99 "Aft Amidships"
+  #stern:99 "Stern"
+  #########################################
+  # Technology                            #
+  #########################################
+  # new ships
+  tech_rs_auxiliary_cruisers:99 "$rs_auxiliary_cruiser_plural$"
+  tech_rs_auxiliary_cruisers_desc:99 "Based upon heavily modified but lightly armed $cruiser$ hulls, these $rs_auxiliary_cruiser_plural$ were designed to fill support roles in fleets."
+  tech_rs_battlecruisers:99 "$rs_battlecruiser_plural$"
+  tech_rs_battlecruisers_desc:99 "Improvements in construction methodology indirectly led to the development of the $rs_battlecruiser$, the largest of the sub-capital ship classes. A more flexible alternative to Battleships, $rs_battlecruiser_plural$ now often serve as the core of sub-capital fleets."
+  tech_rs_carriers:99 "$rs_carrier_plural$"
+  tech_rs_carriers_desc:99 "Widespread usage of capital ships has uncovered the need for a dedicated strike craft platform, leading to the creation of the $rs_carrier$."
+  tech_rs_dreadnoughts:99 "$rs_dreadnought_plural$"
+  tech_rs_dreadnoughts_desc:99 "Practical experience with spinal mount weaponry, along with advancements in engineering design and power routing have allowed for a larger, more specialized variant of the $battleship$ hull. The result, the $rs_dreadnought_short$ capital ship class."
+  tech_rs_heavy_dreadnoughts:99 "$rs_heavy_dreadnought_plural$"
+  tech_rs_heavy_dreadnoughts_desc:99 "There is always demand for ever larger vessels, and after extensive upgrades the $rs_dreadnought$ was upscaled into the $rs_heavy_dreadnought$ design."
+  
+  TECH_UNLOCK_RS_SUPPORT_CRUISER_TITLE:99 "§HUnlocks Ship Type:§! $rs_support_cruiser$"
+  TECH_UNLOCK_RS_SUPPORT_CRUISER_DESC:99 "§H$rs_support_cruiser$§!\n$rs_support_cruiser_desc$"
+  TECH_UNLOCK_RS_EW_CRUISER_TITLE:99 "§HUnlocks Ship Type:§! $rs_ew_cruiser$"
+  TECH_UNLOCK_RS_EW_CRUISER_DESC:99 "§H$rs_ew_cruiser$§!\n$rs_ew_cruiser_desc$"
+  TECH_UNLOCK_RS_AUXILIARY_CRUISERS_TITLE:99 "§HUnlocks Ship Type:§! $rs_support_cruiser$, $rs_ew_cruiser$"
+  TECH_UNLOCK_RS_AUXILIARY_CRUISERS_DESC:99 "§H$rs_auxiliary_cruiser$§!\nBased on heavily modified but lightly armed Cruiser hulls, $rs_auxiliary_cruiser_plural$ are equipped with auras providing either offensive or defensive support for the fleet."
+  TECH_UNLOCK_RS_BATTLECRUISER_TITLE:99 "§HUnlocks Ship Type:§! $rs_battlecruiser$"
+  TECH_UNLOCK_RS_BATTLECRUISER_DESC:99 "§H$rs_battlecruiser$§!\n$rs_battlecruiser_desc$"
+  TECH_UNLOCK_RS_CARRIER_TITLE:99 "§HUnlocks Ship Type:§! $rs_carrier$"
+  TECH_UNLOCK_RS_CARRIER_DESC:99 "§H$rs_carrier$§!\n$rs_carrier_desc$"
+  TECH_UNLOCK_RS_DREADNOUGHT_TITLE:99 "§HUnlocks Ship Type:§! $rs_dreadnought$"
+  TECH_UNLOCK_RS_DREADNOUGHT_DESC:99 "§H$rs_dreadnought$§!\n$rs_dreadnought_desc$"
+  TECH_UNLOCK_RS_HEAVY_DREADNOUGHT_TITLE:99 "§HUnlocks Ship Type:§! $rs_heavy_dreadnought$"
+  TECH_UNLOCK_RS_HEAVY_DREADNOUGHT_DESC:99 "§H$rs_heavy_dreadnought$§!\n$rs_heavy_dreadnought_desc$"
+  
+  # buff techs
+  tech_rs_auxiliary_cruiser_build_speed:99 "Standardized $rs_auxiliary_cruiser$ Patterns"
+  tech_rs_auxiliary_cruiser_build_speed_desc:99 "Establishing new standards for the modeling and construction of auxiliary cruisers greatly improves the efficiency of the production pipeline."
+  tech_rs_auxiliary_cruiser_build_speed_effect:99 "$mod_shipsize_rs_auxiliary_cruiser_cost_mult$: §G-5%§!\n$mod_shipsize_rs_auxiliary_cruiser_build_speed_mult$: §G-25%§!\n$mod_shipsize_rs_battlecruiser_cost_mult$: §G-5%§!\n$mod_shipsize_rs_battlecruiser_build_speed_mult$: §G-25%§!"
+  
+  tech_rs_auxiliary_cruiser_hull_1:99 "Improved $rs_auxiliary_cruiser$ Hulls"
+  tech_rs_auxiliary_cruiser_hull_1_desc:99 "Advances in building techniques will allow for the construction of sturdier and more durable auxiliary cruisers."
+  tech_rs_auxiliary_cruiser_hull_2:99 "Advanced $rs_auxiliary_cruiser$ Hulls"
+  tech_rs_auxiliary_cruiser_hull_2_desc:99 "The latest generation of auxiliary cruiser hulls have optimized structural integrity fields and improved bulkheads."
+  tech_rs_auxiliary_cruiser_hull_effect:99 "$mod_shipsize_rs_auxiliary_cruiser_hull_add$: §G+250§! \n$mod_shipsize_rs_battlecruiser_hull_add$: §G+500§!"
+  
+  tech_rs_carrier_build_speed:99 "Standardized $rs_carrier$ Patterns"
+  tech_rs_carrier_build_speed_desc:99 "Establishing new standards for the modeling and construction of fleet carriers greatly improves the efficiency of the production pipeline."
+  tech_rs_carrier_build_speed_effect:99 "$mod_shipsize_rs_carrier_cost_mult$: §G-5%§!\n$mod_shipsize_rs_carrier_build_speed_mult$: §G-25%§!"
+  
+  tech_rs_carrier_hull_1:99 "Improved $rs_carrier$ Hulls"
+  tech_rs_carrier_hull_1_desc:99 "Advances in building techniques will allow for the construction of sturdier and more durable fleet carriers."
+  tech_rs_carrier_hull_2:99 "Advanced $rs_carrier$ Hulls"
+  tech_rs_carrier_hull_2_desc:99 "The latest generation of fleet carrier hulls have optimized structural integrity fields and improved bulkheads."
+  tech_rs_carrier_hull_effect:99 "$mod_shipsize_rs_carrier_hull_add$: §G+500§!"
+  
+  tech_dn_build_speed:99 "Standardized $rs_dreadnought$ Patterns"
+  tech_dn_build_speed_desc:99 "Establishing new standards for the modeling and construction of dreadnoughts greatly improves the efficiency of the production pipeline."
+  tech_rs_dreadnought_build_speed_effect:99 "$mod_shipsize_rs_dreadnought_cost_mult$: §G-5%§!\n$mod_shipsize_rs_dreadnought_build_speed_mult$: §G-20%§!"
+  
+  tech_dn_hull_1:99 "Improved $rs_dreadnought$ Hulls"
+  tech_dn_hull_1_desc:99 "Advances in building techniques will allow for the construction of sturdier and more durable dreadnoughts."
+  tech_dn_hull_2:99 "Advanced $rs_dreadnought$ Hulls"
+  tech_dn_hull_2_desc:99 "The latest generation of dreadnought hulls have optimized structural integrity fields and improved bulkheads."
+  tech_rs_dreadnought_hull_effect:99 "$mod_shipsize_rs_dreadnought_hull_add$: §G+1000§!"
+  
+  tech_hdn_build_speed:99 "Standardized $rs_heavy_dreadnought$ Patterns"
+  tech_hdn_build_speed_desc:99 "Establishing new standards for the modeling and construction of heavy dreadnoughts greatly improves the efficiency of the production pipeline."
+  tech_rs_heavy_dreadnought_build_speed_effect:99 "$mod_shipsize_rs_heavy_dreadnought_cost_mult$: §G-5%§!\n$mod_shipsize_rs_heavy_dreadnought_build_speed_mult$: §G-15%§!"
+  
+  tech_hdn_hull_1:99 "Improved $rs_heavy_dreadnought$ Hulls"
+  tech_hdn_hull_1_desc:99 "Advances in building techniques will allow for the construction of sturdier and more durable heavy dreadnoughts."
+  tech_hdn_hull_2:99 "Advanced $rs_heavy_dreadnought$ Hulls"
+  tech_hdn_hull_2_desc:99 "The latest generation of heavy dreadnought hulls have optimized structural integrity fields and improved bulkheads."
+  tech_rs_heavy_dreadnought_hull_effect:99 "$mod_shipsize_rs_heavy_dreadnought_hull_add$: §G+2000§!"
+  #########################################
+  # RS Support Cruiser Sections           #
+  #########################################
+  RS_SUPPORT_CRUISER_BOW_A1S2:99 "Recharger Bow"
+  RS_SUPPORT_CRUISER_MID_S2RDB:99 "Nanobot Drone Core"
+  RS_SUPPORT_CRUISER_STERN_G1:99 "Torpedo Stern"
+  RS_SUPPORT_CRUISER_STERN_S2:99 "Gunship Stern"
+  RS_SUPPORT_CRUISER_STERN_P2:99 "Picket Ship Stern"
+  RS_SUPPORT_CRUISER_STERN_M1:99 "Broadside Stern"
+  #########################################
+  # RS Electronic Warfare Cruiser Sections #
+  #########################################
+  RS_ew_cruiser_BOW_A1S2:99 "Destabilizer Bow"
+  RS_ew_cruiser_MID_A2S2:99 "Dampener Core"
+  RS_ew_cruiser_STERN_G1:99 "Torpedo Stern"
+  RS_ew_cruiser_STERN_S2:99 "Gunship Stern"
+  RS_ew_cruiser_STERN_P2:99 "Picket Ship Stern"
+  RS_ew_cruiser_STERN_M1:99 "Broadside Stern"
+  #########################################
+  # RS BattleCruiser Sections             #
+  #########################################
+  RS_BATTLECRUISER_BOW_L1:99 "Artillery Bow"
+  RS_BATTLECRUISER_BOW_M1S2:99 "Torpedo Bow"
+  RS_BATTLECRUISER_BOW_M2:99 "Broadside Bow"
+  RS_BATTLECRUISER_BOW_P4:99 "Picket Ship Bow"
+  RS_BATTLECRUISER_BOW_S4:99 "Interceptor Bow"
+  RS_BATTLECRUISER_BOW_XL1:99 "Spinal Mount Bow"
+  #RS_BATTLECRUISER_MID1_S2HB:99 "Hangar Fore"
+  RS_BATTLECRUISER_MID1_L1M1:99 "Artillery Fore"
+  RS_BATTLECRUISER_MID1_M3:99 "Broadside Fore"
+  RS_BATTLECRUISER_MID1_M2S2:99 "Torpedo Fore"
+  RS_BATTLECRUISER_MID1_P6:99 "Picket Ship Fore"
+  RS_BATTLECRUISER_MID1_S6:99 "Interceptor Fore"
+  #RS_BATTLECRUISER_MID2_S2HB:99 "Hangar Aft"
+  RS_BATTLECRUISER_MID2_L1M1:99 "Artillery Aft"
+  RS_BATTLECRUISER_MID2_M3:99 "Broadside Aft"
+  RS_BATTLECRUISER_MID2_M2S2:99 "Torpedo Aft"
+  RS_BATTLECRUISER_MID2_P6:99 "Picket Ship Aft"
+  RS_BATTLECRUISER_MID2_S6:99 "Interceptor Aft"
+  RS_BATTLECRUISER_STERN_M1:99 "Broadside Stern"
+  RS_BATTLECRUISER_STERN_S2:99 "Gunship Stern"
+  RS_BATTLECRUISER_STERN_P2:99 "Picket Ship Stern"
+  RS_BATTLECRUISER_STERN_G1:99 "Torpedo Stern"
+  #########################################
+  # New Battleship Sections               #
+  #########################################
+  BATTLESHIP_BOW_L1G1P2:99 "Support Bow"
+  BATTLESHIP_MID_L2G2:99 "Torpedo Support Core"
+  BATTLESHIP_MID_L1G2P4:99 "Support Core"
+  BATTLESHIP_MID_L1G4:99 "Torpedo Core"
+  BATTLESHIP_STERN_M1P2:99 "Support Stern"
+  #########################################
+  # RS Dreadnought Sections               #
+  #########################################
+  RS_DREADNOUGHT_BOW_L1M1S2:99 "Broadside Bow"
+  RS_DREADNOUGHT_BOW_L1G1P2:99 "Support Bow"
+  RS_DREADNOUGHT_BOW_L2:99 "Artillery Bow"
+  #RS_DREADNOUGHT_BOW_M1S2SHB:99 "Hangar Bow"
+  RS_DREADNOUGHT_BOW_XL1:99 "Spinal Mount Bow"
+  RS_DREADNOUGHT_MID1_L4M4:99 "Broadside Fore"
+  RS_DREADNOUGHT_MID1_L3:99 "Artillery Fore"
+  RS_DREADNOUGHT_MID1_L2G2:99 "Torpedo Support Fore"
+  RS_DREADNOUGHT_MID1_L1G2P4:99 "Support Fore"
+  RS_DREADNOUGHT_MID1_L1G4:99 "Torpedo Fore"
+  #RS_DREADNOUGHT_MID1_M4SHB:99 "Hangar Fore"
+  #RS_DREADNOUGHT_MID1_S4LHB:99 "Carrier Fore"
+  RS_DREADNOUGHT_MID2_L4M4:99 "Broadside Aft"
+  RS_DREADNOUGHT_MID2_L3:99 "Artillery Aft"
+  RS_DREADNOUGHT_MID2_L2G2:99 "Torpedo Support Aft"
+  RS_DREADNOUGHT_MID2_L1G2P4:99 "Support Aft"
+  RS_DREADNOUGHT_MID2_L1G4:99 "Torpedo Aft"
+  #RS_DREADNOUGHT_MID2_M4SHB:99 "Hangar Aft"
+  #RS_DREADNOUGHT_MID2_S4LHB:99 "Carrier Aft"
+  RS_DREADNOUGHT_STERN_L1:99 "Artillery Stern"
+  RS_DREADNOUGHT_STERN_M2:99 "Broadside Stern"
+  RS_DREADNOUGHT_STERN_G1P2:99 "Support Stern"
+  #####################################
+  # RS Carrier Sections               #
+  #####################################
+  RS_CARRIER_BOW_2LHB:99 "Artillery Bow"
+  RS_CARRIER_BOW_2SLHB:99 "Picket Ship Bow"
+  RS_CARRIER_MID1_2LHB:99 "Carrier Fore"
+  RS_CARRIER_MID1_2SLHB:99 "Hangar Fore"
+  RS_CARRIER_MID2_2LHB:99 "Carrier Aft"
+  RS_CARRIER_MID2_2SLHB:99 "Hangar Aft"
+  RS_CARRIER_STERN_1LHB:99 "Carrier Stern"
+  RS_CARRIER_STERN_S2:99 "Picket Ship Stern"
+  ########################
+  # RS Heavy Dreadnought #
+  ########################
+  RS_HEAVY_DREADNOUGHT_BOW_P16:99 "Bulwark Bow"
+  RS_HEAVY_DREADNOUGHT_BOW_S16:99 "Stormbringer Bow"
+  RS_HEAVY_DREADNOUGHT_BOW_L2P8:99 "Nova Bow"
+  RS_HEAVY_DREADNOUGHT_BOW_L1M1S2:99 "Broadside Bow"
+  RS_HEAVY_DREADNOUGHT_BOW_L4:99 "Artillery Bow"
+  RS_HEAVY_DREADNOUGHT_BOW_XL2:99 "Spinal Mount Bow"
+  
+  RS_HEAVY_DREADNOUGHT_MID1_P24:99 "Bulwark Fore"
+  RS_HEAVY_DREADNOUGHT_MID1_S24:99 "Stormbringer Fore"
+  RS_HEAVY_DREADNOUGHT_MID1_L4P8:99 "Nova Fore"
+  RS_HEAVY_DREADNOUGHT_MID1_L4M4:99 "Broadside Fore"
+  RS_HEAVY_DREADNOUGHT_MID1_L4G4:99 "Torpedo Support Fore"
+  RS_HEAVY_DREADNOUGHT_MID1_L6:99 "Artillery Fore"
+  #RS_HEAVY_DREADNOUGHT_MID1_M4SHB:99 "Hangar Fore"
+  
+  RS_HEAVY_DREADNOUGHT_MID2_P24:99 "Bulwark Amidships"
+  RS_HEAVY_DREADNOUGHT_MID2_S24:99 "Stormbringer Amidships"
+  RS_HEAVY_DREADNOUGHT_MID2_L4P8:99 "Nova Amidships"
+  RS_HEAVY_DREADNOUGHT_MID2_L4M4:99 "Broadside Amidships"
+  RS_HEAVY_DREADNOUGHT_MID2_L4G4:99 "Torpedo Support Amidships"
+  RS_HEAVY_DREADNOUGHT_MID2_L6:99 "Artillery Amidships"
+  #RS_HEAVY_DREADNOUGHT_MID2_M4SHB:99 "Hangar Amidships"
+  
+  RS_HEAVY_DREADNOUGHT_MID3_P24:99 "Bulwark Aft"
+  RS_HEAVY_DREADNOUGHT_MID3_S24:99 "Stormbringer Aft"
+  RS_HEAVY_DREADNOUGHT_MID3_L4P8:99 "Nova Aft"
+  RS_HEAVY_DREADNOUGHT_MID3_L4M4:99 "Broadside Aft"
+  RS_HEAVY_DREADNOUGHT_MID3_L4G4:99 "Torpedo Support Aft"
+  RS_HEAVY_DREADNOUGHT_MID3_L6:99 "Artillery Aft"
+  RS_HEAVY_DREADNOUGHT_MID3_T1:99 "Titan Core"
+  #RS_HEAVY_DREADNOUGHT_MID3_M4SHB:99 "Hangar Aft"
+  
+  RS_HEAVY_DREADNOUGHT_STERN_P8:99 "Bulwark Stern"
+  RS_HEAVY_DREADNOUGHT_STERN_S8:99 "Stormbringer Stern"
+  RS_HEAVY_DREADNOUGHT_STERN_L1P4:99 "Nova Stern"
+  RS_HEAVY_DREADNOUGHT_STERN_L2:99 "Artillery Stern"
+  RS_HEAVY_DREADNOUGHT_STERN_M4:99 "Broadside Stern"
+  RS_HEAVY_DREADNOUGHT_STERN_G4:99 "Torpedo Stern"
+  
+  #########################################
+  # RS Ship Auras                         #
+  #########################################
+  RS_DEFENSIVE_SHIP_AURA_EMPTY:99 "Empty Slot"
+  RS_SHIP_AURA_NANOBOT_CLOUD:99 "Ship-mounted Nanobot Cloud"
+  RS_SHIP_AURA_SHIELD_RECHARGER:99 "Ship-mounted Shield Recharger"
+  RS_SHIP_AURA_SHIELD_HARDENER:99 "Ship-mounted Shield Hardening Aura"
+  RS_SHIP_AURA_PD_BOOST:99 "Ship-mounted Coordinated Point Defense Systems"
+  RS_SHIP_AURA_HYPERLANE:99 "Ship-mounted Subspace Amplifier"
+  RS_SHIP_AURA_ESCAPE:99 "Ship-mounted Emergency Retreat Booster"
+  
+  RS_OFFENSIVE_SHIP_AURA_EMPTY:99 "Empty Slot"
+  RS_SHIP_AURA_SHIELD_DAMPENER:99 "Ship-mounted Shield Dampener"
+  RS_SHIP_AURA_QUANTUM_DESTABILIZER:99 "Ship-mounted Quantum Destabilizer"
+  RS_SHIP_AURA_ECM_PACKAGE:99 "ECM Package"
+  RS_SHIP_AURA_TRACKING_JAMMER:99 "Ship-mounted Tracking Jammer"
+  
+  aura_shield_hardener:99 "$aura_category_defensive$ - $RS_SHIP_AURA_SHIELD_HARDENER$"
+  aura_pd_boost:99 "$aura_category_defensive$ - $RS_SHIP_AURA_PD_BOOST$"
+  aura_escape:99 "$aura_category_defensive$ - $RS_SHIP_AURA_ESCAPE$"
+  aura_ecm_package:99 "$aura_category_offensive$ - $RS_SHIP_AURA_ECM_PACKAGE$"
+  aura_tracking_jammer:99 "$aura_category_offensive$ - $RS_SHIP_AURA_TRACKING_JAMMER$"
+  #########################################
+  # RS Heavy Power Cores                  #
+  #########################################
+  # CRUISER
+  HEAVY_CRUISER_FISSION_REACTOR:99 "$FISSION_REACTOR$"
+  HEAVY_CRUISER_FUSION_REACTOR:99 "$FUSION_REACTOR$"
+  HEAVY_CRUISER_COLD_FUSION_REACTOR:99 "$COLD_FUSION_REACTOR$"
+  HEAVY_CRUISER_ANTIMATTER_REACTOR:99 "$ANTIMATTER_REACTOR$"
+  HEAVY_CRUISER_ZERO_POINT_REACTOR:99 "$ZERO_POINT_REACTOR$"
+  HEAVY_CRUISER_DARK_MATTER_REACTOR:99 "$DARK_MATTER_REACTOR$"
+  # BATTLESHIP
+  HEAVY_BATTLESHIP_FISSION_REACTOR:99 "Heavy $FISSION_REACTOR$"
+  HEAVY_BATTLESHIP_FUSION_REACTOR:99 "Heavy $FUSION_REACTOR$"
+  HEAVY_BATTLESHIP_COLD_FUSION_REACTOR:99 "Heavy $COLD_FUSION_REACTOR$"
+  HEAVY_BATTLESHIP_ANTIMATTER_REACTOR:99 "Heavy $ANTIMATTER_REACTOR$"
+  HEAVY_BATTLESHIP_ZERO_POINT_REACTOR:99 "Heavy $ZERO_POINT_REACTOR$"
+  HEAVY_BATTLESHIP_DARK_MATTER_REACTOR:99 "Heavy $DARK_MATTER_REACTOR$"
+  # HEAVY DREADNOUGHT
+  DREADNOUGHT_SECONDARY_FISSION_REACTOR:99 "Secondary $FISSION_REACTOR$"
+  DREADNOUGHT_SECONDARY_FUSION_REACTOR:99 "Secondary $FUSION_REACTOR$"
+  DREADNOUGHT_SECONDARY_COLD_FUSION_REACTOR:99 "Secondary $COLD_FUSION_REACTOR$"
+  DREADNOUGHT_SECONDARY_ANTIMATTER_REACTOR:99 "Secondary $ANTIMATTER_REACTOR$"
+  DREADNOUGHT_SECONDARY_ZERO_POINT_REACTOR:99 "Secondary $ZERO_POINT_REACTOR$"
+  DREADNOUGHT_SECONDARY_DARK_MATTER_REACTOR:99 "Secondary $DARK_MATTER_REACTOR$"
+  #########################################
+  # RS Auxiliary Power Cores              #
+  #########################################
+  aux_power_core:99 "Auxiliary Power Core"
+  EMPTY_AUXILIARY_REACTOR:99 "Empty Auxiliary Reactor Slot"
+  SUB_CAPITAL_FISSION_AUXILIARY_REACTOR:99 "Auxiliary $FISSION_REACTOR$"
+  SUB_CAPITAL_FUSION_AUXILIARY_REACTOR:99 "Auxiliary $FUSION_REACTOR$"
+  SUB_CAPITAL_COLD_FUSION_AUXILIARY_REACTOR:99 "Auxiliary $COLD_FUSION_REACTOR$"
+  SUB_CAPITAL_ANTIMATTER_AUXILIARY_REACTOR:99 "Auxiliary $ANTIMATTER_REACTOR$"
+  SUB_CAPITAL_ZERO_POINT_AUXILIARY_REACTOR:99 "Auxiliary $ZERO_POINT_REACTOR$"
+  SUB_CAPITAL_DARK_MATTER_AUXILIARY_REACTOR:99 "Auxiliary $DARK_MATTER_REACTOR$"
+  CAPITAL_FISSION_AUXILIARY_REACTOR:99 "Auxiliary $FISSION_REACTOR$"
+  CAPITAL_FUSION_AUXILIARY_REACTOR:99 "Auxiliary $FUSION_REACTOR$"
+  CAPITAL_COLD_FUSION_AUXILIARY_REACTOR:99 "Auxiliary $COLD_FUSION_REACTOR$"
+  CAPITAL_ANTIMATTER_AUXILIARY_REACTOR:99 "Auxiliary $ANTIMATTER_REACTOR$"
+  CAPITAL_ZERO_POINT_AUXILIARY_REACTOR:99 "Auxiliary $ZERO_POINT_REACTOR$"
+  CAPITAL_DARK_MATTER_AUXILIARY_REACTOR:99 "Auxiliary $DARK_MATTER_REACTOR$"
+  #########################################
+  # RS Combat Computers                   #
+  #########################################
+  RS_COMBAT_COMPUTER_LINE_DEFAULT:99 "$COMBAT_COMPUTER_DEFAULT$"
+  RS_COMBAT_COMPUTER_ARTILLERY_DEFAULT:99 "$COMBAT_COMPUTER_DEFAULT$"
+  RS_COMBAT_COMPUTER_CARRIER_DEFAULT:99 "$COMBAT_COMPUTER_DEFAULT$"
+  RS_COMBAT_COMPUTER_TORPEDO_DEFAULT:99 "$COMBAT_COMPUTER_DEFAULT$"
+  
+  RS_COMBAT_COMPUTER_PICKET_BASIC:99 "$COMBAT_COMPUTER_PICKET_BASIC$"
+  RS_COMBAT_COMPUTER_LINE_BASIC:99 "$COMBAT_COMPUTER_LINE_BASIC$"
+  RS_COMBAT_COMPUTER_ARTILLERY_BASIC:99 "$COMBAT_COMPUTER_ARTILLERY_BASIC$"
+  RS_COMBAT_COMPUTER_CARRIER_BASIC:99 "$COMBAT_COMPUTER_CARRIER_BASIC$"
+  RS_COMBAT_COMPUTER_ADV_CARRIER_BASIC:99 "Combat Computer (Advanced Carrier)"
+  RS_COMBAT_COMPUTER_TORPEDO_BASIC:99 "$COMBAT_COMPUTER_TORPEDO_BASIC$"
+  
+  RS_COMBAT_COMPUTER_PICKET_ADVANCED:99 "$COMBAT_COMPUTER_PICKET_ADVANCED$"
+  RS_COMBAT_COMPUTER_LINE_ADVANCED:99 "$COMBAT_COMPUTER_LINE_ADVANCED$"
+  RS_COMBAT_COMPUTER_ARTILLERY_ADVANCED:99 "$COMBAT_COMPUTER_ARTILLERY_ADVANCED$"
+  RS_COMBAT_COMPUTER_CARRIER_ADVANCED:99 "$COMBAT_COMPUTER_CARRIER_ADVANCED$"
+  RS_COMBAT_COMPUTER_ADV_CARRIER_ADVANCED:99 "Advanced Combat Computer (Advanced Carrier)"
+  RS_COMBAT_COMPUTER_TORPEDO_ADVANCED:99 "$COMBAT_COMPUTER_TORPEDO_ADVANCED$"
+  
+  RS_COMBAT_COMPUTER_PICKET_SAPIENT:99 "$COMBAT_COMPUTER_PICKET_SAPIENT$"
+  RS_COMBAT_COMPUTER_LINE_SAPIENT:99 "$COMBAT_COMPUTER_LINE_SAPIENT$"
+  RS_COMBAT_COMPUTER_ARTILLERY_SAPIENT:99 "$COMBAT_COMPUTER_ARTILLERY_SAPIENT$"
+  RS_COMBAT_COMPUTER_CARRIER_SAPIENT:99 "$COMBAT_COMPUTER_CARRIER_SAPIENT$"
+  RS_COMBAT_COMPUTER_ADV_CARRIER_SAPIENT:99 "Sapient Combat Computer (Advanced Carrier)"
+  RS_COMBAT_COMPUTER_TORPEDO_SAPIENT:99 "$COMBAT_COMPUTER_TORPEDO_SAPIENT$"
+  
+  RS_COMBAT_COMPUTER_PICKET_AUTONOMOUS:99 "$COMBAT_COMPUTER_PICKET_AUTONOMOUS$"
+  RS_COMBAT_COMPUTER_LINE_AUTONOMOUS:99 "$COMBAT_COMPUTER_LINE_AUTONOMOUS$"
+  RS_COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS:99 "$COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS$"
+  RS_COMBAT_COMPUTER_CARRIER_AUTONOMOUS:99 "$COMBAT_COMPUTER_CARRIER_AUTONOMOUS$"
+  RS_COMBAT_COMPUTER_ADV_CARRIER_AUTONOMOUS:99 "Autonomous Ship Intellect (Advanced Carrier)"
+  RS_COMBAT_COMPUTER_TORPEDO_AUTONOMOUS:99 "$COMBAT_COMPUTER_TORPEDO_AUTONOMOUS$"
+  
+  RS_COMBAT_COMPUTER_PICKET_PRECOG:99 "$COMBAT_COMPUTER_PICKET_PRECOG$"
+  RS_COMBAT_COMPUTER_LINE_PRECOG:99 "$COMBAT_COMPUTER_LINE_PRECOG$"
+  RS_COMBAT_COMPUTER_ARTILLERY_PRECOG:99 "$COMBAT_COMPUTER_ARTILLERY_PRECOG$"
+  RS_COMBAT_COMPUTER_CARRIER_PRECOG:99 "$COMBAT_COMPUTER_CARRIER_PRECOG$"
+  RS_COMBAT_COMPUTER_ADV_CARRIER_PRECOG:99 "Precognitive Interface (Advanced Carrier)"
+  RS_COMBAT_COMPUTER_TORPEDO_PRECOG:99 "$COMBAT_COMPUTER_TORPEDO_PRECOG$"
+  
+  ADV_CARRIER_BEHAVIOR_DESC:99 "§HAdvanced Carrier Tactics:§! The ship will actively flee to extreme (§Y210§!) range and launch strike craft at the target. Will not approach enemies."
+  #########################################
+  # RS Thrusters                          #
+  #########################################
+  RS_CRUISER_SHIP_THRUSTER_1:99 "$SHIP_THRUSTER_1$"
+  RS_CRUISER_SHIP_THRUSTER_1_DESC:99 "$SHIP_THRUSTER_1_DESC$"
+  RS_BATTLESHIP_SHIP_THRUSTER_1:99 "$SHIP_THRUSTER_1$"
+  RS_BATTLESHIP_SHIP_THRUSTER_1_DESC:99 "$SHIP_THRUSTER_1_DESC$"
+  RS_TITAN_SHIP_THRUSTER_1:99 "$SHIP_THRUSTER_1$"
+  RS_TITAN_SHIP_THRUSTER_1_DESC:99 "$SHIP_THRUSTER_1_DESC$"
+  
+  RS_CRUISER_SHIP_THRUSTER_2:99 "$SHIP_THRUSTER_2$"
+  RS_CRUISER_SHIP_THRUSTER_2_DESC:99 "$SHIP_THRUSTER_2_DESC$"
+  RS_BATTLESHIP_SHIP_THRUSTER_2:99 "$SHIP_THRUSTER_2$"
+  RS_BATTLESHIP_SHIP_THRUSTER_2_DESC:99 "$SHIP_THRUSTER_2_DESC$"
+  RS_TITAN_SHIP_THRUSTER_2:99 "$SHIP_THRUSTER_2$"
+  RS_TITAN_SHIP_THRUSTER_2_DESC:99 "$SHIP_THRUSTER_2_DESC$"
+  
+  RS_CRUISER_SHIP_THRUSTER_3:99 "$SHIP_THRUSTER_3$"
+  RS_CRUISER_SHIP_THRUSTER_3_DESC:99 "$SHIP_THRUSTER_3_DESC$"
+  RS_BATTLESHIP_SHIP_THRUSTER_3:99 "$SHIP_THRUSTER_3$"
+  RS_BATTLESHIP_SHIP_THRUSTER_3_DESC:99 "$SHIP_THRUSTER_3_DESC$"
+  RS_TITAN_SHIP_THRUSTER_3:99 "$SHIP_THRUSTER_3$"
+  RS_TITAN_SHIP_THRUSTER_3_DESC:99 "$SHIP_THRUSTER_3_DESC$"
+  
+  RS_CRUISER_SHIP_THRUSTER_4:99 "$SHIP_THRUSTER_4$"
+  RS_CRUISER_SHIP_THRUSTER_4_DESC:99 "$SHIP_THRUSTER_4_DESC$"
+  RS_BATTLESHIP_SHIP_THRUSTER_4:99 "$SHIP_THRUSTER_4$"
+  RS_BATTLESHIP_SHIP_THRUSTER_4_DESC:99 "$SHIP_THRUSTER_4_DESC$"
+  RS_TITAN_SHIP_THRUSTER_4:99 "$SHIP_THRUSTER_4$"
+  RS_TITAN_SHIP_THRUSTER_4_DESC:99 "$SHIP_THRUSTER_4_DESC$"
+  
+  RS_CRUISER_SHIP_THRUSTER_5:99 "$SHIP_THRUSTER_5$"
+  RS_CRUISER_SHIP_THRUSTER_5_DESC:99 "$SHIP_THRUSTER_5_DESC$"
+  RS_BATTLESHIP_SHIP_THRUSTER_5:99 "$SHIP_THRUSTER_5$"
+  RS_BATTLESHIP_SHIP_THRUSTER_5_DESC:99 "$SHIP_THRUSTER_5_DESC$"
+  RS_TITAN_SHIP_THRUSTER_5:99 "$SHIP_THRUSTER_5$"
+  RS_TITAN_SHIP_THRUSTER_5_DESC:99 "$SHIP_THRUSTER_5_DESC$"
+  #########################################
+  # DEBUG                                 #
+  #########################################
+  tech_rs_THIS_TECH_SHOULD_BE_IMPOSSIBLE_TO_GET:99 "Inaccessible Dummy"
+  tech_rs_THIS_TECH_SHOULD_BE_IMPOSSIBLE_TO_GET_desc:99 "This tech should be impossible to get. It gates unavailable ship sections."
+  

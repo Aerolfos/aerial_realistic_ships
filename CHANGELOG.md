@@ -2,6 +2,11 @@
 
 ---
 ## Aerial Realistic Ships Version `WIP`:
+- Newest changes
+---
+
+---
+## [Aerial Realistic Ships Version `v0.5.3`](https://github.com/Aerolfos/aerial_realistic_ships/releases/tag/v0.5.3):
 - Rename Electronic Attack Cruiser to Electronic Warfare (EW) Cruiser
   - Refactored in files too
 - Redo ship descriptions
