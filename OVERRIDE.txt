@@ -1,4 +1,4 @@
 extra_loc_files_to_update={
-	"aerial_realistic_ships/localisation/english/l_english_rs.yml"
+	"aerial_realistic_ships/localisation/english/rs_general_l_english.yml"
 }
 version_loc_key="rs_mod_version"
